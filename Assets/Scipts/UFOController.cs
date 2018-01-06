@@ -18,6 +18,10 @@ public class UFOController : MonoBehaviour
     float drop_time = 0f;
     float auto_spawn_time = 3f;
 
+    // Judgement variables
+    public PlacementChecker checker;
+
+
     private void Start()
     {
         init_vel = velocity;
@@ -48,6 +52,9 @@ public class UFOController : MonoBehaviour
 
     public void SpawnNewBlock()
     {
+        // Judge placement of last block
+        checker.CheckActiveBlock();
+
         if (transform.childCount == 0)
         {
             GameObject new_block = Instantiate(block_prefab, transform);

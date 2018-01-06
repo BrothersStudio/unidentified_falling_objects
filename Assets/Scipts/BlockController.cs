@@ -14,6 +14,7 @@ public class BlockController : MonoBehaviour
 
     private void Update()
     {
+        // Checking to see if it's stopped moving
         if (GetComponent<Rigidbody>() != null)
         {
             if (GetComponent<Rigidbody>().velocity.y > 0)
@@ -24,8 +25,24 @@ public class BlockController : MonoBehaviour
             if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.y == 0)
             {
                 GameObject.Find("UFO").GetComponent<UFOController>().SpawnNewBlock();
-                spawned_new_block = true;
             }
         }
+    }
+
+    public bool IsActiveBlock()
+    {
+        if (!spawned_new_block)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void SetInactiveBlock()
+    {
+        spawned_new_block = true;
     }
 }
