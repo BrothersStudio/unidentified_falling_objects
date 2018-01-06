@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockController : MonoBehaviour
+public class Block : MonoBehaviour
 {
     bool detached;
     bool spawned_new_block = false;
@@ -24,7 +24,7 @@ public class BlockController : MonoBehaviour
 
             if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.y == 0)
             {
-                GameObject.Find("UFO").GetComponent<UFOController>().SpawnNewBlock();
+                GameObject.Find("UFO").GetComponent<UFO>().SpawnNewBlock();
             }
         }
     }

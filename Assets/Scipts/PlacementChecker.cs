@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlacementChecker : MonoBehaviour
 {
     GameObject[] ghost_blocks;
+    bool level_done = false;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class PlacementChecker : MonoBehaviour
         GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
         for (int i = 0; i < blocks.Length; i++)
         {
-            if (blocks[i].GetComponent<BlockController>().IsActiveBlock())
+            if (blocks[i].GetComponent<Block>().IsActiveBlock())
             {
                 // Find closest ghost block to active block
                 float min_dist = Mathf.Infinity;
@@ -33,23 +34,34 @@ public class PlacementChecker : MonoBehaviour
                         }
                     }
                 }
-                min_block.SetActive(false);
-                blocks[i].GetComponent<BlockController>().SetInactiveBlock();
-                break;
+
+                // Set closest ghost to dropped block as inactive
+                if (min_block != null)
+                {
+                    min_block.SetActive(false);
+                    blocks[i].GetComponent<Block>().SetInactiveBlock();
+                    CalculateLevelOver();
+                    break;
+                }
             }
         }
     }
 
-    private bool IsLevelOver()
+    public void CalculateLevelOver()
     {
         // Are any ghost blocks still active?
         for (int i = 0; i < ghost_blocks.Length; i++)
         {
             if (ghost_blocks[i].activeSelf)
             {
-                return true;
+                return;
             }
         }
-        return false;
+        level_done = true;
+    }
+
+    public bool IsLevelOver()
+    {
+        return level_done;
     }
 }

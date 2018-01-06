@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UFOController : MonoBehaviour
+public class UFO : MonoBehaviour
 {
     // Movement variables
     float left_bound = -5.8f;
@@ -19,12 +19,13 @@ public class UFOController : MonoBehaviour
     float auto_spawn_time = 3f;
 
     // Judgement variables
-    public PlacementChecker checker;
-
+    PlacementChecker checker;
 
     private void Start()
     {
         init_vel = velocity;
+
+        checker = GameObject.Find("PlacementChecker").GetComponent<PlacementChecker>();
     }
 
     private void Update()
@@ -35,7 +36,7 @@ public class UFOController : MonoBehaviour
         {
             if (transform.childCount > 0)
             {
-                GetComponentInChildren<BlockController>().Fall();
+                GetComponentInChildren<Block>().Fall();
                 transform.DetachChildren();
                 drop_time = Time.timeSinceLevelLoad;
             }
@@ -57,7 +58,7 @@ public class UFOController : MonoBehaviour
 
         if (transform.childCount == 0)
         {
-            GameObject new_block = Instantiate(block_prefab, transform);
+            Instantiate(block_prefab, transform);
         }
     }
 
