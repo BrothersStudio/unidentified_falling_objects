@@ -4,21 +4,57 @@ using UnityEngine;
 
 public class UFOController : MonoBehaviour
 {
+    // Movement variables
     float left_bound = -5.8f;
     float right_bound = 5.8f;
+    bool moving_left = false;
     float init_vel;
     float velocity = 0.1f;
     float accel = 0.05f;
     bool deccel_flag = false;
 
-    bool moving_left = false;
+    // Block variables
+    public GameObject block_prefab;
+    float drop_time = 0f;
+    float auto_spawn_time = 3f;
 
     private void Start()
     {
         init_vel = velocity;
     }
 
-    private void Update ()
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.DownArrow) ||
+            Input.GetKey(KeyCode.Mouse0) ||
+            Input.GetKey(KeyCode.Space))
+        {
+            if (transform.childCount > 0)
+            {
+                GetComponentInChildren<BlockController>().Fall();
+                transform.DetachChildren();
+                drop_time = Time.timeSinceLevelLoad;
+            }
+        }
+
+        if (transform.childCount == 0)
+        {
+            if (drop_time + auto_spawn_time < Time.timeSinceLevelLoad)
+            {
+                SpawnNewBlock();
+            }
+        }
+    }
+
+    public void SpawnNewBlock()
+    {
+        if (transform.childCount == 0)
+        {
+            GameObject new_block = Instantiate(block_prefab, transform);
+        }
+    }
+
+    private void FixedUpdate ()
     {
         // Check if we need to start slowing down
         if (moving_left && transform.position.x < 0 && !deccel_flag)
@@ -54,7 +90,6 @@ public class UFOController : MonoBehaviour
         {
             SwitchDirections();
         }
-        Debug.Log(velocity);
 	}
 
     private void SwitchDirections()
