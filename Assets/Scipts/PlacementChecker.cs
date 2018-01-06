@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlacementChecker : MonoBehaviour
 {
     GameObject[] ghost_blocks;
     bool level_done = false;
+
+    // Score
+    int score = 0;
+    public Text score_text;
 
     private void Start()
     {
@@ -38,6 +43,8 @@ public class PlacementChecker : MonoBehaviour
                 // Set closest ghost to dropped block as inactive
                 if (min_block != null)
                 {
+                    CalculateScore(min_dist);
+
                     min_block.SetActive(false);
                     blocks[i].GetComponent<Block>().SetInactiveBlock();
                     CalculateLevelOver();
@@ -45,6 +52,13 @@ public class PlacementChecker : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void CalculateScore(float added_score)
+    {
+        added_score = (1000 / (added_score + 1));
+        score += (int)added_score;
+        score_text.text = score.ToString();
     }
 
     public void CalculateLevelOver()
