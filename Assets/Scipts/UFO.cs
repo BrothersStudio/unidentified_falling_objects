@@ -30,9 +30,10 @@ public class UFO : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow) ||
+        if ((Input.GetKey(KeyCode.DownArrow) ||
             Input.GetKey(KeyCode.Mouse0) ||
-            Input.GetKey(KeyCode.Space))
+            Input.GetKey(KeyCode.Space)) &&
+            !checker.IsLevelOver())
         {
             if (transform.childCount > 0)
             {
