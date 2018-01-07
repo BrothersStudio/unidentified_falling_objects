@@ -40,31 +40,31 @@ public class CameraTurnAndFace : MonoBehaviour
     public void StartGame()
     {
         ToggleTitle();
-        SelectLevel(1);
+        SelectLevel("Pyramids");
     }
 
     public void ChangeLevels(bool left)
     {
         if (current_target == level1)
         {
-            SelectLevel(2);
+            SelectLevel("Stonehenge");
         }
         else
         {
-            SelectLevel(1);
+            SelectLevel("Pyramids");
         }
     }
 
-    private void SelectLevel(int selected)
+    public void SelectLevel(string selected)
     {
         switch (selected)
         {
-            case 1:
+            case "Pyramids":
                 current_target = level1;
                 pyramids_title.SetActive(true);
                 stonehenge_title.SetActive(false);
                 break;
-            case 2:
+            case "Stonehenge":
                 current_target = level2;
                 stonehenge_title.SetActive(true);
                 pyramids_title.SetActive(false);

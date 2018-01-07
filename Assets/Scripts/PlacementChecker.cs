@@ -20,6 +20,7 @@ public class PlacementChecker : MonoBehaviour
         ghost_blocks = GameObject.FindGameObjectsWithTag("Ghost");
     }
 
+    // Called when UFO spawns in new block. Judges placement of last block.
     public void CheckActiveBlock()
     {
         GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");

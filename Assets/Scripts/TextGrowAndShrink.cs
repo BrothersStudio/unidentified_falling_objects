@@ -9,7 +9,7 @@ public class TextGrowAndShrink : MonoBehaviour
     float grow_speed = 0.01f;
     bool growing = true;
 
-	void Update ()
+	void FixedUpdate ()
     {
         Vector3 scale = GetComponent<RectTransform>().localScale;
         if (growing && scale.x < max_scale)
