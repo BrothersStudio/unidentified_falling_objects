@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a94b406c573186e478d2b8877e768c8e
+  - enabled: 1
+    path: Assets/Scenes/Stonehenge.unity
+    guid: a7e33e32dfc2cd84392d18cd74aa964b
+  - enabled: 1
+    path: Assets/Scenes/Pyramids.unity
+    guid: d345dd0c106e14b498f9381712520ccb
