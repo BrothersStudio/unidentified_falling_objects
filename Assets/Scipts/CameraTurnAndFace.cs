@@ -6,6 +6,7 @@ public class CameraTurnAndFace : MonoBehaviour
 {
     public GameObject title;
     public GameObject start_button;
+    public GameObject back_button;
 
     public Transform title_card;
     public Transform level1;
@@ -33,17 +34,19 @@ public class CameraTurnAndFace : MonoBehaviour
     public void Title()
     {
         current_target = title_card;
+        Invoke("ToggleTitle", 0.5f);
     }
 
     public void Level1()
     {
         current_target = level1;
-        ToggleTitle();
+        Invoke("ToggleTitle", 0.5f);
     }
 
     private void ToggleTitle()
     {
         title.SetActive(!title.activeSelf);
         start_button.SetActive(!start_button.activeSelf);
+        back_button.SetActive(!back_button.activeSelf);
     }
 }
