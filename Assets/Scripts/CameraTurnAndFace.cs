@@ -6,10 +6,12 @@ public class CameraTurnAndFace : MonoBehaviour
 {
     public GameObject title;
     public GameObject start_button;
-    public GameObject back_button;
+    public GameObject left_button;
+    public GameObject right_button;
 
     public Transform title_card;
     public Transform level1;
+    public Transform level2;
     Transform current_target;
 
     Vector3 direction;
@@ -31,22 +33,29 @@ public class CameraTurnAndFace : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turn_speed);
 	}
 
-    public void Title()
+    public void StartGame()
     {
-        current_target = title_card;
-        Invoke("ToggleTitle", 0.5f);
+        ToggleTitle();
+        current_target = level1;
     }
 
-    public void Level1()
+    public void ChangeLevels(bool left)
     {
-        current_target = level1;
-        Invoke("ToggleTitle", 0.5f);
+        if (current_target == level1)
+        {
+            current_target = level2;
+        }
+        else
+        {
+            current_target = level1;
+        }
     }
 
     private void ToggleTitle()
     {
-        title.SetActive(!title.activeSelf);
-        start_button.SetActive(!start_button.activeSelf);
-        back_button.SetActive(!back_button.activeSelf);
+        title.SetActive(false);
+        start_button.SetActive(false);
+        left_button.SetActive(true);
+        right_button.SetActive(true);
     }
 }
