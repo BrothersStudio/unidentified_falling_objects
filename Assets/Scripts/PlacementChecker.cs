@@ -10,7 +10,10 @@ public class PlacementChecker : MonoBehaviour
 
     // Score
     int score = 0;
+    float score_factor = 1000;
     public Text score_text;
+    public GameObject score_word_prefab;
+    public GameObject canvas;
 
     private void Start()
     {
@@ -43,7 +46,8 @@ public class PlacementChecker : MonoBehaviour
                 // Set closest ghost to dropped block as inactive
                 if (min_block != null)
                 {
-                    CalculateScore(min_dist);
+                    float added_score = CalculateScore(min_dist);
+                    SpawnScoreWord(added_score, blocks[i].transform.position);
 
                     min_block.SetActive(false);
                     blocks[i].GetComponent<Block>().SetInactiveBlock();
@@ -54,11 +58,43 @@ public class PlacementChecker : MonoBehaviour
         }
     }
 
-    private void CalculateScore(float added_score)
+    private float CalculateScore(float added_score)
     {
-        added_score = (1000 / (added_score + 1));
+        added_score = (score_factor / (added_score + 1));
         score += (int)added_score;
         score_text.text = score.ToString();
+        return added_score;
+    }
+
+    private void SpawnScoreWord(float score, Vector3 spawn_location)
+    {
+        // Spawn and place score word over placed block
+        Vector2 viewportPoint = Camera.main.WorldToViewportPoint(spawn_location);
+        GameObject word = Instantiate(score_word_prefab, viewportPoint, Quaternion.identity, canvas.transform);
+        word.GetComponent<RectTransform>().anchorMin = viewportPoint;
+        word.GetComponent<RectTransform>().anchorMax = viewportPoint;
+
+        // Change color and word of score word as appropriate 
+        if ((score / score_factor) * 100 >= 90)
+        {
+            word.GetComponent<Text>().text = "Perfect!";
+            word.GetComponent<Text>().color = Color.magenta;
+        }
+        else if ((score / score_factor) * 100 >= 70)
+        {
+            word.GetComponent<Text>().text = "Great!";
+            word.GetComponent<Text>().color = Color.green;
+        }
+        else if ((score / score_factor) * 100 >= 50)
+        {
+            word.GetComponent<Text>().text = "Good!";
+            word.GetComponent<Text>().color = Color.cyan;
+        }
+        else 
+        {
+            word.GetComponent<Text>().text = "Bad!";
+            word.GetComponent<Text>().color = Color.red;
+        }
     }
 
     public void CalculateLevelOver()

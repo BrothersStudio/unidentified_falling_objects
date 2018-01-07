@@ -374,10 +374,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1090}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -539,6 +539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score_text: {fileID: 1449048563}
+  score_word_prefab: {fileID: 1491353236386816, guid: a42cd62cb5ace7942b4ad1c462767fe6,
+    type: 2}
+  canvas: {fileID: 457940489}
 --- !u!4 &871192835
 Transform:
   m_ObjectHideFlags: 0
