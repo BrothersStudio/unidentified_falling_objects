@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class BoxCollision : MonoBehaviour
 {
-    bool played_sound = false;
     AudioSource source;
+
+    CameraShake cam_shake;
 
     private void Start()
     {
         source = GetComponent<AudioSource>();
+
+        cam_shake = Camera.main.GetComponent<CameraShake>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,12 +20,11 @@ public class BoxCollision : MonoBehaviour
         if (other.tag == "Ground")
         {
             Debug.Log("Play ground sound");
-            played_sound = true;
+            cam_shake.ShakeCamera(0.2f);
         }
         else if (other.tag == "Block")
         {
             Debug.Log("Play block sound");
-            played_sound = true;
         }
     }
 }
