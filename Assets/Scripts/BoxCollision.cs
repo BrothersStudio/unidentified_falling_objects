@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoxSounds : MonoBehaviour
+public class BoxCollision : MonoBehaviour
 {
     bool played_sound = false;
     AudioSource source;

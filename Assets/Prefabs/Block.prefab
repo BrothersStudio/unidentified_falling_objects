@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4384551893844758}
   - component: {fileID: 33329975284563248}
   - component: {fileID: 65638097810171826}
-  - component: {fileID: 114432710573778232}
   - component: {fileID: 82144257908816398}
+  - component: {fileID: 114985838468336208}
   m_Layer: 0
   m_Name: Sound Collider
   m_TagString: Untagged
@@ -228,17 +228,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114432710573778232
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1239318306195064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0efb6e3a2c4913c478e261c097fc85a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114752313049215924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,5 +237,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114985838468336208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1239318306195064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e165b05e983b4f43be92231c293c778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
