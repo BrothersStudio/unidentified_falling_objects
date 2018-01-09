@@ -35,15 +35,15 @@ public class UFO : MonoBehaviour
             Input.GetKey(KeyCode.Space)) &&
             !checker.IsLevelOver())
         {
-            if (transform.childCount > 0)
+            if (GetComponentInChildren<Block>() != null)
             {
                 GetComponentInChildren<Block>().Fall();
-                transform.DetachChildren();
+                GetComponentInChildren<Block>().gameObject.transform.parent = null;
                 drop_time = Time.timeSinceLevelLoad;
             }
         }
 
-        if (transform.childCount == 0)
+        if (GetComponentInChildren<Block>() == null)
         {
             if (drop_time + auto_spawn_time < Time.timeSinceLevelLoad)
             {
@@ -57,7 +57,7 @@ public class UFO : MonoBehaviour
         // Judge placement of last block
         checker.CheckActiveBlock();
 
-        if (transform.childCount == 0)
+        if (GetComponentInChildren<Block>() == null)
         {
             Instantiate(block_prefab, transform);
         }
