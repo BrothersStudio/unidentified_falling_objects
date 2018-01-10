@@ -54,6 +54,8 @@ namespace AWSSDK.Examples
             updateOperation.onClick.AddListener(PerformUpdateOperation);
             deleteOperation.onClick.AddListener(PerformDeleteOperation);
             _client = Client;
+
+
         }
         
         private void PerformCreateOperation()

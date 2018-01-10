@@ -31,6 +31,7 @@ public class CameraShake : MonoBehaviour
 
 	void Update()
 	{
+        Debug.Log(shakeDuration);
         if (shakeDuration > 0)
         {
             gameObject.transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
