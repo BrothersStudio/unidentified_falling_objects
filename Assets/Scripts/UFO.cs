@@ -14,7 +14,6 @@ public class UFO : MonoBehaviour
     bool deccel_flag = false;
 
     // Block variables
-    public GameObject block_prefab;
     float drop_time = 0f;
     float auto_spawn_time = 3f;
 
@@ -26,6 +25,9 @@ public class UFO : MonoBehaviour
         init_vel = velocity;
 
         checker = GameObject.Find("PlacementChecker").GetComponent<PlacementChecker>();
+
+        // Spawn first block
+        Instantiate(GetComponent<BlockQueue>().GetNextBlock(), transform);
     }
 
     private void Update()
@@ -59,7 +61,11 @@ public class UFO : MonoBehaviour
 
         if (GetComponentInChildren<Block>() == null)
         {
-            Instantiate(block_prefab, transform);
+            GameObject next_block = GetComponent<BlockQueue>().GetNextBlock();
+            if (next_block != null)
+            {
+                Instantiate(next_block, transform);
+            }
         }
     }
 
