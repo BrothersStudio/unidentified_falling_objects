@@ -825,6 +825,9 @@ MonoBehaviour:
   score_word_prefab: {fileID: 1491353236386816, guid: a42cd62cb5ace7942b4ad1c462767fe6,
     type: 2}
   canvas: {fileID: 457940489}
+  perfect_sound: {fileID: 8300000, guid: f2feb7ad8498a314fbcb857575353710, type: 3}
+  great_sound: {fileID: 8300000, guid: ee650748981ec104892efac2c3b3f4e6, type: 3}
+  good_sound: {fileID: 8300000, guid: d27d3806154d2ba4ea3f7a69e471daa3, type: 3}
 --- !u!4 &871192835
 Transform:
   m_ObjectHideFlags: 0

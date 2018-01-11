@@ -15,6 +15,11 @@ public class PlacementChecker : MonoBehaviour
     public GameObject score_word_prefab;
     public GameObject canvas;
 
+    // Sounds
+    public AudioClip perfect_sound;
+    public AudioClip great_sound;
+    public AudioClip good_sound;
+
     private void Start()
     {
         ghost_blocks = GameObject.FindGameObjectsWithTag("Ghost");
@@ -80,16 +85,25 @@ public class PlacementChecker : MonoBehaviour
         {
             word.GetComponent<Text>().text = "Perfect!";
             word.GetComponent<Text>().color = Color.magenta;
+
+            word.GetComponent<AudioSource>().clip = perfect_sound;
+            word.GetComponent<AudioSource>().Play();
         }
         else if ((score / score_factor) * 100 >= 70)
         {
             word.GetComponent<Text>().text = "Great!";
             word.GetComponent<Text>().color = Color.green;
+
+            word.GetComponent<AudioSource>().clip = great_sound;
+            word.GetComponent<AudioSource>().Play();
         }
         else if ((score / score_factor) * 100 >= 50)
         {
             word.GetComponent<Text>().text = "Good!";
             word.GetComponent<Text>().color = Color.cyan;
+
+            word.GetComponent<AudioSource>().clip = good_sound;
+            word.GetComponent<AudioSource>().Play();
         }
         else 
         {
