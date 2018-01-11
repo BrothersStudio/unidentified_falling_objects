@@ -239,6 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e165b05e983b4f43be92231c293c778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ground_sound: {fileID: 8300000, guid: 53ee8260ff3a64f4496872fafdbb9820, type: 3}
+  block_sound: {fileID: 8300000, guid: 4d761ae78c4c8324b9a9cd9e87fb4293, type: 3}
 --- !u!114 &114072553477939060
 MonoBehaviour:
   m_ObjectHideFlags: 1
