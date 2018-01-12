@@ -10,9 +10,9 @@ public class CameraTurnAndFace : MonoBehaviour
     public GameObject left_button;
     public GameObject right_button;
     public GameObject play_button;
+    public GameObject score_button;
     public GameObject pyramids_title;
     public GameObject stonehenge_title;
-    public GameObject leaderboard;
 
     public Transform title_card;
     public Transform level1;
@@ -96,7 +96,7 @@ public class CameraTurnAndFace : MonoBehaviour
         left_button.SetActive(true);
         right_button.SetActive(true);
         play_button.SetActive(true);
-        leaderboard.SetActive(true);
+        score_button.SetActive(true);
     }
 
     private void SetLevelScores(string selected)
