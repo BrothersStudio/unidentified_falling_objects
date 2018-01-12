@@ -10,6 +10,7 @@ public class CameraTurnAndFace : MonoBehaviour
     public GameObject left_button;
     public GameObject right_button;
     public GameObject play_button;
+    public GameObject score_button;
     public GameObject pyramids_title;
     public GameObject stonehenge_title;
 
@@ -26,6 +27,8 @@ public class CameraTurnAndFace : MonoBehaviour
     private void Start()
     {
         current_target = title_card;
+
+        LoadScores();
     }
 
     private void FixedUpdate ()
@@ -63,11 +66,13 @@ public class CameraTurnAndFace : MonoBehaviour
                 current_target = level1;
                 pyramids_title.SetActive(true);
                 stonehenge_title.SetActive(false);
+                SetLevelScores(selected);
                 break;
             case "Stonehenge":
                 current_target = level2;
                 stonehenge_title.SetActive(true);
                 pyramids_title.SetActive(false);
+                SetLevelScores(selected);
                 break;
         }
     }
@@ -91,5 +96,16 @@ public class CameraTurnAndFace : MonoBehaviour
         left_button.SetActive(true);
         right_button.SetActive(true);
         play_button.SetActive(true);
+        score_button.SetActive(true);
+    }
+
+    private void SetLevelScores(string selected)
+    {
+
+    }
+
+    private void LoadScores()
+    {
+
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class BoxCollision : MonoBehaviour
 {
     AudioSource source;
+    public AudioClip ground_sound;
+    public AudioClip block_sound;
 
     CameraShake cam_shake;
 
@@ -19,12 +21,17 @@ public class BoxCollision : MonoBehaviour
     {
         if (other.tag == "Ground")
         {
-            Debug.Log("Play ground sound");
-            cam_shake.ShakeCamera(0.2f);
+            source.volume = GetComponentInParent<Rigidbody>().velocity.magnitude / 9f;
+            source.clip = ground_sound;
+            source.Play();
+
+            cam_shake.ShakeCamera(0.15f);
         }
         else if (other.tag == "Block")
         {
-            Debug.Log("Play block sound");
+            source.volume = GetComponentInParent<Rigidbody>().velocity.magnitude / 9f;
+            source.clip = block_sound;
+            source.Play();
         }
     }
 }
