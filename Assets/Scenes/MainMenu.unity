@@ -214,6 +214,7 @@ MonoBehaviour:
   play_button: {fileID: 1385620136}
   pyramids_title: {fileID: 964649589}
   stonehenge_title: {fileID: 1975145532}
+  leaderboard: {fileID: 980594419}
   title_card: {fileID: 542281760}
   level1: {fileID: 166858002}
   level2: {fileID: 1258974407}
@@ -2892,7 +2893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239, y: 261.65}
+  m_AnchoredPosition: {x: -214.09, y: 434.98}
   m_SizeDelta: {x: 1258.5, y: 286.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975145534
