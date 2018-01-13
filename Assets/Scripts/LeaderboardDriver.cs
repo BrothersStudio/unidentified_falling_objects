@@ -82,6 +82,14 @@ public class LeaderboardDriver : DynamoDbBase
         {
             return current_name;
         }
+        set
+        {
+            StreamWriter cache = new StreamWriter("./.IcarusCache/name.blob");
+            cache.Write(value);
+            cache.Close();
+
+            current_name = value;
+        }
     }
 
     public static string Id

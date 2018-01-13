@@ -9,6 +9,8 @@ public class CameraTurnAndFace : MonoBehaviour
 {
     public GameObject title;
     public GameObject start_button;
+    public GameObject name_panel;
+
     public GameObject left_button;
     public GameObject right_button;
     public GameObject play_button;
@@ -65,10 +67,13 @@ public class CameraTurnAndFace : MonoBehaviour
     {
         if (LeaderboardDriver.Name == null)
         {
-            Debug.Log("NO NAME!!");
+            name_panel.SetActive(true);
         }
-        ToggleTitle();
-        SelectLevel("Pyramids");
+        else
+        {
+            ToggleTitle();
+            SelectLevel("Pyramids");
+        }
     }
 
     public void ChangeLevels(bool left)
@@ -119,6 +124,8 @@ public class CameraTurnAndFace : MonoBehaviour
     {
         title.SetActive(false);
         start_button.SetActive(false);
+        name_panel.SetActive(false);
+
         left_button.SetActive(true);
         right_button.SetActive(true);
         play_button.SetActive(true);
