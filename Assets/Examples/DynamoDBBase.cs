@@ -37,7 +37,11 @@ public class DynamoDbBase : MonoBehaviour
         get
         {
             if (_credentials == null)
-                _credentials = new BasicAWSCredentials("","");
+            {
+                TextAsset key = Resources.Load("key") as TextAsset;
+                string[] split_key = key.text.Split(',');
+                _credentials = new BasicAWSCredentials(split_key[0], split_key[1]);
+            }
             return _credentials;
         }
     }
