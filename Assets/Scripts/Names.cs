@@ -10,6 +10,14 @@ public class Names : MonoBehaviour
         transform.Find("InputField").GetComponent<InputField>().ActivateInputField();
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Return))
+        {
+            ConfirmName();
+        }
+    }
+
     public void ConfirmName()
     {
         if (CheckName())
