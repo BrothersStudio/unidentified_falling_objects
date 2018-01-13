@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using Amazon.DynamoDBv2.Model;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class CameraTurnAndFace : MonoBehaviour
@@ -11,6 +13,7 @@ public class CameraTurnAndFace : MonoBehaviour
     public GameObject right_button;
     public GameObject play_button;
     public GameObject score_button;
+    public GameObject score_table;
     public GameObject pyramids_title;
     public GameObject stonehenge_title;
 
@@ -24,11 +27,29 @@ public class CameraTurnAndFace : MonoBehaviour
 
     float turn_speed = 4f;
 
+    // Scores
+    private int current_level = 0;
+    private List<Dictionary<string, AttributeValue>> scores;
+
     private void Start()
     {
         current_target = title_card;
+    }
 
-        LoadScores();
+    private void Update()
+    {
+        if (LeaderboardDriver.Readable)
+        {
+            scores = LeaderboardDriver.Results;
+
+            string score_string = "";
+            Text score_text = score_table.transform.Find("Scores").GetComponent<Text>();
+            foreach (var item in scores)
+            {
+                score_string += item["Score"].N + " " + item["Name"].S + '\n';
+            }
+            score_text.text = score_string;
+        }
     }
 
     private void FixedUpdate ()
@@ -42,6 +63,10 @@ public class CameraTurnAndFace : MonoBehaviour
 
     public void StartGame()
     {
+        if (LeaderboardDriver.Name == null)
+        {
+            Debug.Log("NO NAME!!");
+        }
         ToggleTitle();
         SelectLevel("Pyramids");
     }
@@ -63,18 +88,19 @@ public class CameraTurnAndFace : MonoBehaviour
         switch (selected)
         {
             case "Pyramids":
+                current_level = 1;
                 current_target = level1;
                 pyramids_title.SetActive(true);
                 stonehenge_title.SetActive(false);
-                SetLevelScores(selected);
                 break;
             case "Stonehenge":
+                current_level = 2;
                 current_target = level2;
                 stonehenge_title.SetActive(true);
                 pyramids_title.SetActive(false);
-                SetLevelScores(selected);
                 break;
         }
+        LeaderboardDriver.FindScoresForLevel(current_level);
     }
 
     public void PlayLevel()
@@ -97,15 +123,5 @@ public class CameraTurnAndFace : MonoBehaviour
         right_button.SetActive(true);
         play_button.SetActive(true);
         score_button.SetActive(true);
-    }
-
-    private void SetLevelScores(string selected)
-    {
-
-    }
-
-    private void LoadScores()
-    {
-
     }
 }

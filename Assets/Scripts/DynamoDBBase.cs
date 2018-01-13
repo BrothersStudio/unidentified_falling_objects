@@ -21,18 +21,18 @@ using Amazon;
 
 public class DynamoDbBase : MonoBehaviour
 {
-    public string DynamoRegion = RegionEndpoint.USEast1.SystemName;
+    public static string DynamoRegion = RegionEndpoint.USEast1.SystemName;
 
-    private RegionEndpoint _DynamoRegion
+    private static RegionEndpoint _DynamoRegion
     {
         get { return RegionEndpoint.GetBySystemName(DynamoRegion); }
     }
 
     private static IAmazonDynamoDB _ddbClient;
 
-    private AWSCredentials _credentials;
+    private static AWSCredentials _credentials;
 
-    private AWSCredentials Credentials
+    private static AWSCredentials Credentials
     {
         get
         {
@@ -46,7 +46,7 @@ public class DynamoDbBase : MonoBehaviour
         }
     }
 
-    protected IAmazonDynamoDB Client
+    protected static IAmazonDynamoDB Client
     {
         get
         {

@@ -27,12 +27,27 @@ using Amazon.DynamoDBv2.Model;
 
 public class LeaderboardDriver : DynamoDbBase
 {
+    private static LeaderboardDriver instance;
 
-    private IAmazonDynamoDB _client;
-    private DynamoDBContext _context;
-    private bool table_readable = false;
-    private List<Dictionary<string, AttributeValue>> result_set = null;
-    private string current_id = null;
+    public static LeaderboardDriver Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = GameObject.FindObjectOfType<LeaderboardDriver>();
+            }
+
+            return instance;
+        }
+    }
+
+    private static IAmazonDynamoDB _client;
+    private static DynamoDBContext _context;
+    private static bool table_readable = false;
+    private static List<Dictionary<string, AttributeValue>> result_set = null;
+    private static string current_id = null;
+    private static string current_name = null;
 
     private DynamoDBContext Context
     {
@@ -45,42 +60,67 @@ public class LeaderboardDriver : DynamoDbBase
         }
     }
 
-    private void Update()
+    public static bool Readable
     {
-        if (table_readable)
+        get
         {
-            Debug.Log("result set available");
-            Debug.Log(result_set);
+            return table_readable;
+        }
+    }
 
-            foreach (var item in result_set)
-            {
-                Debug.Log(item["Score"].N + " " + item["Name"].N);
-            }
+    public static List<Dictionary<string, AttributeValue>> Results
+    {
+        get
+        {
+            return result_set;
+        }
+    }
+
+    public static string Name
+    {
+        get
+        {
+            return current_name;
+        }
+    }
+
+    public static string Id
+    {
+        get
+        {
+            return current_id;
         }
     }
 
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+
         UnityInitializer.AttachToGameObject(this.gameObject);
         Amazon.AWSConfigs.HttpClient = Amazon.AWSConfigs.HttpClientOption.UnityWebRequest;
 
-        string path = "./.IcarusCache/cache.blob";
+        string id_path = "./.IcarusCache/id.blob";
         if (!Directory.Exists(".IcarusCache"))
         {
             Directory.CreateDirectory(".IcarusCache");
-            StreamWriter cache = new StreamWriter(path);
+            StreamWriter cache = new StreamWriter(id_path);
             System.Random rand = new System.Random();
             cache.Write(Encrypt.EncryptString(rand.Next(1000000000).ToString("D10"), "LazyUnlock1"));
        
             cache.Close();
         }
+        StreamReader reader = new StreamReader(id_path);
+        current_id = Encrypt.DecryptString(reader.ReadToEnd(), "LazyUnlock1");
 
-        StreamReader reader = new StreamReader(path);
-        this.current_id = Encrypt.DecryptString(reader.ReadToEnd(), "LazyUnlock1");
+        string name_path = "./.IcarusCache/name.blob";
+        if (File.Exists(name_path))
+        {
+            reader = new StreamReader(name_path);
+            current_name = reader.ReadToEnd();
+        }
 
         _client = Client;
-        PerformCreateOperation(1, this.current_id, "Chris", 5000);
-        FindScoresForLevel(1);
+        //PerformCreateOperation(1, this.current_id, "Chris", 5000);
     }
 
     private void PerformCreateOperation(int in_level, string in_id, string in_name, int in_score)
@@ -98,13 +138,15 @@ public class LeaderboardDriver : DynamoDbBase
         Debug.Log("Saved new score");
     }
 
-    void FindScoresForLevel(int level)
+    public static void FindScoresForLevel(int level)
     {
         FindScoresHelper(new QueryRequest(), level, null);
     }
 
-    void FindScoresHelper(QueryRequest request, int level, Dictionary<string, AttributeValue> lastKeyEvaluated)
+    static void FindScoresHelper(QueryRequest request, int level, Dictionary<string, AttributeValue> lastKeyEvaluated)
     {
+        table_readable = false;
+
         request.TableName = "IcarusLeaderboard";
         request.IndexName = "LevelHigh-Index";
 
@@ -139,34 +181,14 @@ public class LeaderboardDriver : DynamoDbBase
 
         _client.QueryAsync(request, (result) => {
             result_set = result.Response.Items;
-            this.table_readable = true;
+            table_readable = true;
         });
     }
-    //private void PerformUpdateOperation()
-    //{
-    //    // Retrieve the book. 
-    //    Book bookRetrieved = null;
-    //    Context.LoadAsync<Book>(bookID,(result)=>
-    //    {
-    //        if(result.Exception == null )
-    //        {
-    //            bookRetrieved = result.Result as Book;
-    //            // Update few properties.
-    //            bookRetrieved.ISBN = "222-2222221001";
-    //            bookRetrieved.BookAuthors = new List<string> { " Author 1", "Author x" }; // Replace existing authors list with this.
-    //            Context.SaveAsync<Book>(bookRetrieved,(res)=>
-    //            {
-    //                if(res.Exception == null)
-    //                    resultText.text += ("\nBook updated");
-    //            });
-    //        }
-    //    });
-    //}
 
     [DynamoDBTable("IcarusLeaderboard")]
     public class LevelScore
     {
-        [DynamoDBHashKey]   // Hash key.
+        [DynamoDBHashKey]
         public string Id { get; set; }
         [DynamoDBProperty]
         public int Level { get; set; }
