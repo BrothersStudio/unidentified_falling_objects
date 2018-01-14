@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        // Wait while main menu is loading
+        // Wait while main menu is loading before unloading current scene
         if (loading)
         {
             GameObject[] main_objects = SceneManager.GetSceneByName("MainMenu").GetRootGameObjects();

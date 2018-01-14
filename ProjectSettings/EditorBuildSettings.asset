@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EiffelTower.unity
     guid: 6c4692d4a46205543926faf3de61e361
+  - enabled: 1
+    path: Assets/Scenes/Pisa.unity
+    guid: 29a0dd434db639b46937688c65bbc372

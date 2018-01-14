@@ -86,7 +86,7 @@ public class CameraTurnAndFace : MonoBehaviour
         {
             if (current_target == level1)
             {
-                SelectLevel("EiffelTower");
+                SelectLevel("Pisa");
             }
             else if (current_target == level2)
             {
@@ -95,6 +95,10 @@ public class CameraTurnAndFace : MonoBehaviour
             else if (current_target == level3)
             {
                 SelectLevel("Stonehenge");
+            }
+            else if (current_target == level4)
+            {
+                SelectLevel("EiffelTower");
             }
         }
         else // Right
@@ -108,6 +112,10 @@ public class CameraTurnAndFace : MonoBehaviour
                 SelectLevel("EiffelTower");
             }
             else if (current_target == level3)
+            {
+                SelectLevel("Pisa");
+            }
+            else if (current_target == level4)
             {
                 SelectLevel("Pyramids");
             }
@@ -124,6 +132,7 @@ public class CameraTurnAndFace : MonoBehaviour
                 pyramids_title.SetActive(true);
                 stonehenge_title.SetActive(false);
                 eiffel_title.SetActive(false);
+                pisa_title.SetActive(false);
                 break;
             case "Stonehenge":
                 current_level = 2;
@@ -131,11 +140,21 @@ public class CameraTurnAndFace : MonoBehaviour
                 stonehenge_title.SetActive(true);
                 pyramids_title.SetActive(false);
                 eiffel_title.SetActive(false);
+                pisa_title.SetActive(false);
                 break;
             case "EiffelTower":
                 current_level = 3;
                 current_target = level3;
                 eiffel_title.SetActive(true);
+                pyramids_title.SetActive(false);
+                stonehenge_title.SetActive(false);
+                pisa_title.SetActive(false);
+                break;
+            case "Pisa":
+                current_level = 4;
+                current_target = level4;
+                pisa_title.SetActive(true);
+                eiffel_title.SetActive(false);
                 pyramids_title.SetActive(false);
                 stonehenge_title.SetActive(false);
                 break;
@@ -156,6 +175,10 @@ public class CameraTurnAndFace : MonoBehaviour
         else if (current_target == level3)
         {
             SceneManager.LoadScene("EiffelTower");
+        }
+        else if (current_target == level4)
+        {
+            SceneManager.LoadScene("Pisa");
         }
     }
 

@@ -22,8 +22,6 @@ public class UFO : MonoBehaviour
 
     // Flying away variables
     float end_time;
-    Vector3 ending_position;
-    bool down_part = true;
     bool up_part = false;
 
     private void Start()
@@ -38,8 +36,6 @@ public class UFO : MonoBehaviour
 
     private void Update()
     {
-
-
         if ((Input.GetKey(KeyCode.DownArrow) ||
             Input.GetKey(KeyCode.Mouse0) ||
             Input.GetKey(KeyCode.Space)) &&
@@ -116,6 +112,7 @@ public class UFO : MonoBehaviour
                 SwitchDirections();
             }
         }
+        // If the game is over, start the fly away animation
         else
         {
             if (GetComponent<Rigidbody>() == null)

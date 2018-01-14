@@ -6,6 +6,7 @@ public static class SceneIndices
 {
     public static int GetIndex(string input)
     {
+        // Hacky way of switching between scene names and scene numbers
         switch (input)
         {
             case "Pyramids":
