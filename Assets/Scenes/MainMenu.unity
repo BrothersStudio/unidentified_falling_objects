@@ -2157,7 +2157,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Super Fun UFO Game
+  m_Text: UFO Builder
 --- !u!222 &1145790808
 CanvasRenderer:
   m_ObjectHideFlags: 0
