@@ -63,6 +63,8 @@ public class PlacementChecker : MonoBehaviour
                     }
                 }
 
+                blocks[i].GetComponent<Rigidbody>().mass = 5f;
+
                 // Set closest ghost to dropped block as inactive
                 if (min_block != null)
                 {
