@@ -17,6 +17,11 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            QuitGame();
+        }
+
         // Wait while main menu is loading before unloading current scene
         if (loading)
         {
@@ -36,5 +41,10 @@ public class GameController : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
