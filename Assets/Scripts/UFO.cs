@@ -24,6 +24,10 @@ public class UFO : MonoBehaviour
     float end_time;
     bool up_part = false;
 
+    // Canvas variables
+    public GameObject main_menu_text;
+    public GameObject reset_text;
+
     private void Start()
     {
         init_vel = velocity;
@@ -135,6 +139,12 @@ public class UFO : MonoBehaviour
             if (up_part)
             {
                 GetComponent<Rigidbody>().AddForce(new Vector3(5f, 5f, 2f), ForceMode.Acceleration);
+            }
+
+            if (!GetComponentInChildren<Renderer>().isVisible)
+            {
+                main_menu_text.SetActive(true);
+                reset_text.SetActive(true);
             }
         }
 	}
