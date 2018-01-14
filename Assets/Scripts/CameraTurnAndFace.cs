@@ -86,7 +86,6 @@ public class CameraTurnAndFace : MonoBehaviour
         }
         else
         {
-            ToggleTitle();
             SelectLevel("Pyramids");
         }
     }
@@ -135,6 +134,8 @@ public class CameraTurnAndFace : MonoBehaviour
 
     public void SelectLevel(string selected)
     {
+        ToggleTitle();
+
         switch (selected)
         {
             case "Pyramids":

@@ -25,7 +25,6 @@ public class GameController : MonoBehaviour
             {
                 if (main_objects[i].name == "Main Menu Camera")
                 {
-                    main_objects[i].GetComponent<CameraTurnAndFace>().StartGame();
                     main_objects[i].GetComponent<CameraTurnAndFace>().SelectLevel(current_scene);
                     break;
                 }
