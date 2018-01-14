@@ -36,25 +36,36 @@ public class CameraTurnAndFace : MonoBehaviour
     // Scores
     private int current_level = 0;
     private List<Dictionary<string, AttributeValue>> scores;
+    public GameObject score_prefab;
+    Transform score_holder;
 
     private void Start()
     {
         current_target = title_card;
+
+        score_holder = score_table.transform.Find("Score Holder");
     }
 
     private void Update()
     {
-        if (LeaderboardDriver.Readable)
+        if (LeaderboardDriver.Readable && (score_holder.childCount == 0))
         {
             scores = LeaderboardDriver.Results;
 
-            string score_string = "";
-            Text score_text = score_table.transform.Find("Scores").GetComponent<Text>();
             foreach (var item in scores)
             {
-                score_string += item["Score"].N + " " + item["Name"].S + '\n';
+                GameObject score = Instantiate(score_prefab, score_holder);
+                score.transform.Find("Name").GetComponent<Text>().text = item["Name"].S;
+                score.transform.Find("Score").GetComponent<Text>().text = item["Score"].N;
+
+                // If we see the current user's score, change the color.
+                if (item["Id"].S == LeaderboardDriver.Id)
+                {
+                    Color current_color = score.GetComponent<Image>().color;
+                    current_color.a = 1;
+                    score.GetComponent<Image>().color = current_color;
+                }
             }
-            score_text.text = score_string;
         }
     }
 
@@ -159,6 +170,7 @@ public class CameraTurnAndFace : MonoBehaviour
                 stonehenge_title.SetActive(false);
                 break;
         }
+        ClearLeaderboard();
         LeaderboardDriver.FindScoresForLevel(current_level);
     }
 
@@ -192,5 +204,13 @@ public class CameraTurnAndFace : MonoBehaviour
         right_button.SetActive(true);
         play_button.SetActive(true);
         score_button.SetActive(true);
+    }
+
+    private void ClearLeaderboard()
+    {
+        foreach (Transform child in score_holder)
+        {
+            Destroy(child.gameObject);
+        }
     }
 }
