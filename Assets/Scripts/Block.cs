@@ -45,6 +45,6 @@ public class Block : MonoBehaviour
     {
         spawned_new_block = true;
 
-        GetComponent<Rigidbody>().mass = 5f;
+        GetComponent<Rigidbody>().mass = 3f;
     }
 }
