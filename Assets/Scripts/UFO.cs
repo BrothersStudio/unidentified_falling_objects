@@ -20,6 +20,12 @@ public class UFO : MonoBehaviour
     // Judgement variables
     PlacementChecker checker;
 
+    // Flying away variables
+    float end_time;
+    Vector3 ending_position;
+    bool down_part = true;
+    bool up_part = false;
+
     private void Start()
     {
         init_vel = velocity;
@@ -32,6 +38,8 @@ public class UFO : MonoBehaviour
 
     private void Update()
     {
+
+
         if ((Input.GetKey(KeyCode.DownArrow) ||
             Input.GetKey(KeyCode.Mouse0) ||
             Input.GetKey(KeyCode.Space)) &&
@@ -71,39 +79,66 @@ public class UFO : MonoBehaviour
 
     private void FixedUpdate ()
     {
-        // Check if we need to start slowing down
-        if (moving_left && transform.position.x < 0 && !deccel_flag)
+        if (!checker.IsLevelOver())
         {
-            deccel_flag = true;
-            accel = -accel;
-        }
-        else if (!moving_left && transform.position.x > 0 && !deccel_flag)
-        {
-            deccel_flag = true;
-            accel = -accel;
-        }
+            // Check if we need to start slowing down
+            if (moving_left && transform.position.x < 0 && !deccel_flag)
+            {
+                deccel_flag = true;
+                accel = -accel;
+            }
+            else if (!moving_left && transform.position.x > 0 && !deccel_flag)
+            {
+                deccel_flag = true;
+                accel = -accel;
+            }
 
-        // Apply velocity to ufo
-        Vector3 new_position = transform.position;
-        if (moving_left)
-        {
-            velocity = Mathf.Clamp(velocity + (Time.deltaTime * accel), -0.2f, -0.05f);
+            // Apply velocity to ufo
+            Vector3 new_position = transform.position;
+            if (moving_left)
+            {
+                velocity = Mathf.Clamp(velocity + (Time.deltaTime * accel), -0.2f, -0.05f);
+            }
+            else
+            {
+                velocity = Mathf.Clamp(velocity + (Time.deltaTime * accel), 0.05f, 0.2f);
+            }
+            new_position.x += velocity;
+            transform.position = new_position;
+
+            // Check if we want to switch directions
+            if (moving_left && transform.position.x < left_bound)
+            {
+                SwitchDirections();
+            }
+            else if (!moving_left && transform.position.x > right_bound)
+            {
+                SwitchDirections();
+            }
         }
         else
         {
-            velocity = Mathf.Clamp(velocity + (Time.deltaTime * accel), 0.05f, 0.2f);
-        }
-        new_position.x += velocity;
-        transform.position = new_position;
+            if (GetComponent<Rigidbody>() == null)
+            {
+                end_time = Time.timeSinceLevelLoad;
 
-        // Check if we want to switch directions
-        if (moving_left && transform.position.x < left_bound)
-        {
-            SwitchDirections();
-        }
-        else if (!moving_left && transform.position.x > right_bound)
-        {
-            SwitchDirections();
+                gameObject.AddComponent<Rigidbody>();
+                GetComponent<Rigidbody>().useGravity = false;
+            }
+
+            if ((Time.timeSinceLevelLoad < end_time + 0.5f) && !up_part)
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(0f, -4f), ForceMode.Acceleration);
+            }
+            else
+            {
+                up_part = true;
+            }
+
+            if (up_part)
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(5f, 5f, 2f), ForceMode.Acceleration);
+            }
         }
 	}
 
