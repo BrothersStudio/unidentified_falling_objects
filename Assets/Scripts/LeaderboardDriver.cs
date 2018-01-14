@@ -100,34 +100,38 @@ public class LeaderboardDriver : DynamoDbBase
         }
     }
 
-    void Awake()
+    void Start()
     {
-        DontDestroyOnLoad(gameObject);
-
-        UnityInitializer.AttachToGameObject(this.gameObject);
-        Amazon.AWSConfigs.HttpClient = Amazon.AWSConfigs.HttpClientOption.UnityWebRequest;
-
-        string id_path = "./.IcarusCache/id.blob";
-        if (!Directory.Exists(".IcarusCache"))
+        // Hacky, but we need to see if this was created ONCE
+        if (current_id == null)
         {
-            Directory.CreateDirectory(".IcarusCache");
-            StreamWriter cache = new StreamWriter(id_path);
-            System.Random rand = new System.Random();
-            cache.Write(Encrypt.EncryptString(rand.Next(1000000000).ToString("D10"), "LazyUnlock1"));
-       
-            cache.Close();
-        }
-        StreamReader reader = new StreamReader(id_path);
-        current_id = Encrypt.DecryptString(reader.ReadToEnd(), "LazyUnlock1");
+            DontDestroyOnLoad(gameObject);
 
-        string name_path = "./.IcarusCache/name.blob";
-        if (File.Exists(name_path))
-        {
-            reader = new StreamReader(name_path);
-            current_name = reader.ReadToEnd();
-        }
+            UnityInitializer.AttachToGameObject(this.gameObject);
+            Amazon.AWSConfigs.HttpClient = Amazon.AWSConfigs.HttpClientOption.UnityWebRequest;
 
-        _client = Client;
+            string id_path = "./.IcarusCache/id.blob";
+            if (!Directory.Exists(".IcarusCache"))
+            {
+                Directory.CreateDirectory(".IcarusCache");
+                StreamWriter cache = new StreamWriter(id_path);
+                System.Random rand = new System.Random();
+                cache.Write(Encrypt.EncryptString(rand.Next(1000000000).ToString("D10"), "LazyUnlock1"));
+
+                cache.Close();
+            }
+            StreamReader reader = new StreamReader(id_path);
+            current_id = Encrypt.DecryptString(reader.ReadToEnd(), "LazyUnlock1");
+
+            string name_path = "./.IcarusCache/name.blob";
+            if (File.Exists(name_path))
+            {
+                reader = new StreamReader(name_path);
+                current_name = reader.ReadToEnd();
+            }
+
+            _client = Client;
+        }
     }
 
     public static void PerformCreateOperation(int in_level, int in_score)
