@@ -10,6 +10,7 @@ public class PlacementChecker : MonoBehaviour
     bool level_done = false;
 
     // Score
+    int blocks_dropped = 0;
     int score = 0;
     float score_factor = 1000;
     public Text score_text;
@@ -21,6 +22,9 @@ public class PlacementChecker : MonoBehaviour
     public AudioClip perfect_sound;
     public AudioClip great_sound;
     public AudioClip good_sound;
+
+    // Canvas
+    public GameObject reset_text;
 
     private void Start()
     {
@@ -63,16 +67,22 @@ public class PlacementChecker : MonoBehaviour
                     }
                 }
 
-                blocks[i].GetComponent<Rigidbody>().mass = 5f;
-
                 // Set closest ghost to dropped block as inactive
                 if (min_block != null)
                 {
+                    blocks_dropped++;
                     float added_score = CalculateScore(min_dist);
                     SpawnScoreWord(added_score, blocks[i].transform.position);
 
+                    // Check for pity reset text
+                    if (blocks_dropped > 2 && (score / (score_factor * blocks_dropped) < 0.4))
+                    {
+                        reset_text.SetActive(true);
+                    }
+
                     min_block.SetActive(false);
                     blocks[i].GetComponent<Block>().SetInactiveBlock();
+
                     CalculateLevelOver();
                     break;
                 }

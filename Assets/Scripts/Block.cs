@@ -44,5 +44,7 @@ public class Block : MonoBehaviour
     public void SetInactiveBlock()
     {
         spawned_new_block = true;
+
+        GetComponent<Rigidbody>().mass = 5f;
     }
 }
