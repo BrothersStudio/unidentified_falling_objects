@@ -139,7 +139,7 @@ public class LeaderboardDriver : DynamoDbBase
         string in_id = current_id;
         string in_name = current_name;
 
-        LevelScore myLevelScore = new LevelScore
+        LevelScore newLevelScore = new LevelScore
         {
             Id = in_id,
             Level = in_level,
@@ -147,9 +147,30 @@ public class LeaderboardDriver : DynamoDbBase
             Score = in_score
         };
 
-        Context.SaveAsync(myLevelScore, (result) => { Debug.Log(result.Exception.Message); });
+        LevelScore levelScoreRetrieved = null;
+        LevelScore temp = new LevelScore { Id = in_id, Level = in_level };
+        Context.LoadAsync<LevelScore>(temp, (result) =>
+        {
+            if (result.Exception == null)                                           //if we get a hit for an existing score, check if new score is better, if it is overwrite, else leave current score in db
+            {
+                if (result.Result != null)
+                {
+                    levelScoreRetrieved = result.Result as LevelScore;
 
-        Debug.Log("Saved new score");
+                    if (levelScoreRetrieved.Score < in_score)
+                    {
+                        levelScoreRetrieved.Score = in_score;
+                        Context.SaveAsync<LevelScore>(levelScoreRetrieved, (res) => { });
+                        Debug.Log("Updated old score");
+                    }
+                }
+                else                                                                   //if we get an exception for Loading, the Id/Level combo doesn't exist in the DB so create a new record
+                {
+                    Context.SaveAsync(newLevelScore, (res) => { Debug.Log(result.Exception.Message); });
+                    Debug.Log("Saved new score");
+                }
+            }                                                             
+        });
     }
 
     public static void FindScoresForLevel(int level)
