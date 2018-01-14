@@ -17,6 +17,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        // Wait while main menu is loading
         if (loading)
         {
             GameObject[] main_objects = SceneManager.GetSceneByName("MainMenu").GetRootGameObjects();

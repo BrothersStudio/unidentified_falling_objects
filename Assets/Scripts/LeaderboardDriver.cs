@@ -49,7 +49,7 @@ public class LeaderboardDriver : DynamoDbBase
     private static string current_id = null;
     private static string current_name = null;
 
-    private DynamoDBContext Context
+    private static DynamoDBContext Context
     {
         get
         {
@@ -128,11 +128,13 @@ public class LeaderboardDriver : DynamoDbBase
         }
 
         _client = Client;
-        //PerformCreateOperation(1, this.current_id, "Chris", 5000);
     }
 
-    private void PerformCreateOperation(int in_level, string in_id, string in_name, int in_score)
+    public static void PerformCreateOperation(int in_level, int in_score)
     {
+        string in_id = current_id;
+        string in_name = current_name;
+
         LevelScore myLevelScore = new LevelScore
         {
             Id = in_id,

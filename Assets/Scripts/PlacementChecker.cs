@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlacementChecker : MonoBehaviour
@@ -14,6 +15,7 @@ public class PlacementChecker : MonoBehaviour
     public Text score_text;
     public GameObject score_word_prefab;
     public GameObject canvas;
+    bool score_sent = false;
 
     // Sounds
     public AudioClip perfect_sound;
@@ -23,6 +25,18 @@ public class PlacementChecker : MonoBehaviour
     private void Start()
     {
         ghost_blocks = GameObject.FindGameObjectsWithTag("Ghost");
+    }
+
+    private void Update()
+    {
+        // Send score if not sent yet and level is done
+        if (IsLevelOver() && !score_sent)
+        {
+            int scene_ind = SceneIndices.GetIndex(SceneManager.GetActiveScene().name);
+            LeaderboardDriver.PerformCreateOperation(scene_ind, score);
+
+            score_sent = true;
+        }
     }
 
     // Called when UFO spawns in new block. Judges placement of last block.
