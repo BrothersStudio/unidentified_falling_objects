@@ -18,10 +18,14 @@ public class CameraTurnAndFace : MonoBehaviour
     public GameObject score_table;
     public GameObject pyramids_title;
     public GameObject stonehenge_title;
+    public GameObject eiffel_title;
+    public GameObject pisa_title;
 
     public Transform title_card;
     public Transform level1;
     public Transform level2;
+    public Transform level3;
+    public Transform level4;
     Transform current_target;
 
     Vector3 direction;
@@ -78,13 +82,35 @@ public class CameraTurnAndFace : MonoBehaviour
 
     public void ChangeLevels(bool left)
     {
-        if (current_target == level1)
+        if (left)
         {
-            SelectLevel("Stonehenge");
+            if (current_target == level1)
+            {
+                SelectLevel("EiffelTower");
+            }
+            else if (current_target == level2)
+            {
+                SelectLevel("Pyramids");
+            }
+            else if (current_target == level3)
+            {
+                SelectLevel("Stonehenge");
+            }
         }
-        else
+        else // Right
         {
-            SelectLevel("Pyramids");
+            if (current_target == level1)
+            {
+                SelectLevel("Stonehenge");
+            }
+            else if (current_target == level2)
+            {
+                SelectLevel("EiffelTower");
+            }
+            else if (current_target == level3)
+            {
+                SelectLevel("Pyramids");
+            }
         }
     }
 
@@ -97,12 +123,21 @@ public class CameraTurnAndFace : MonoBehaviour
                 current_target = level1;
                 pyramids_title.SetActive(true);
                 stonehenge_title.SetActive(false);
+                eiffel_title.SetActive(false);
                 break;
             case "Stonehenge":
                 current_level = 2;
                 current_target = level2;
                 stonehenge_title.SetActive(true);
                 pyramids_title.SetActive(false);
+                eiffel_title.SetActive(false);
+                break;
+            case "EiffelTower":
+                current_level = 3;
+                current_target = level3;
+                eiffel_title.SetActive(true);
+                pyramids_title.SetActive(false);
+                stonehenge_title.SetActive(false);
                 break;
         }
         LeaderboardDriver.FindScoresForLevel(current_level);
@@ -117,6 +152,10 @@ public class CameraTurnAndFace : MonoBehaviour
         else if (current_target == level2)
         {
             SceneManager.LoadScene("Stonehenge");
+        }
+        else if (current_target == level3)
+        {
+            SceneManager.LoadScene("EiffelTower");
         }
     }
 

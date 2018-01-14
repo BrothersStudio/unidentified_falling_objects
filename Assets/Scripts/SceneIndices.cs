@@ -12,6 +12,10 @@ public static class SceneIndices
                 return 1;
             case "Stonehenge":
                 return 2;
+            case "EiffelTower":
+                return 3;
+            case "Pisa":
+                return 4;
         }
         return 0;
     }
