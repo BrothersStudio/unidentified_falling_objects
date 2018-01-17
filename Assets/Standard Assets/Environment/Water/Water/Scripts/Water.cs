@@ -96,8 +96,8 @@ namespace UnityStandardAssets.Water
 
                 // Setup oblique projection matrix so that near plane is our reflection
                 // plane. This way we clip everything below/above it for free.
-                Vector4 clipPlane = CameraSpacePlane(reflectionCamera, pos, normal, 1.0f);
-                reflectionCamera.projectionMatrix = cam.CalculateObliqueMatrix(clipPlane);
+                //Vector4 clipPlane = CameraSpacePlane(reflectionCamera, pos, normal, 1.0f);
+                //reflectionCamera.projectionMatrix = cam.CalculateObliqueMatrix(clipPlane);
 
 				// Set custom culling matrix from the current camera
 				reflectionCamera.cullingMatrix = cam.projectionMatrix * cam.worldToCameraMatrix;
