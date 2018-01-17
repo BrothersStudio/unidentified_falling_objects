@@ -17,7 +17,7 @@ using UnityEngine;
 using Amazon.DynamoDBv2;
 using Amazon.Runtime;
 using Amazon;
-
+using System;
 
 public class DynamoDbBase : MonoBehaviour
 {
@@ -36,12 +36,20 @@ public class DynamoDbBase : MonoBehaviour
     {
         get
         {
-            if (_credentials == null)
+            try
             {
-                TextAsset key = Resources.Load("key") as TextAsset;
-                string[] split_key = key.text.Split(',');
-                _credentials = new BasicAWSCredentials(split_key[0], split_key[1]);
+                if (_credentials == null)
+                {
+                    TextAsset key = Resources.Load("key") as TextAsset;
+                    string[] split_key = key.text.Split(',');
+                    _credentials = new BasicAWSCredentials(split_key[0], split_key[1]);
+                }
             }
+            catch (Exception e)
+            {
+                Debug.Log(e.Message);
+            }
+
             return _credentials;
         }
     }
@@ -50,11 +58,17 @@ public class DynamoDbBase : MonoBehaviour
     {
         get
         {
-            if (_ddbClient == null)
+            try
             {
-                _ddbClient = new AmazonDynamoDBClient(Credentials, _DynamoRegion);
+                if (_ddbClient == null)
+                {
+                    _ddbClient = new AmazonDynamoDBClient(Credentials, _DynamoRegion);
+                }
             }
-
+            catch (Exception e)
+            {
+                Debug.Log(e.Message);
+            }
             return _ddbClient;
         }
     }
