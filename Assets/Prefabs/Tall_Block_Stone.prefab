@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 23238489716046416}
   - component: {fileID: 114280510307858926}
   m_Layer: 0
-  m_Name: Tall Block
+  m_Name: Tall_Block_Stone
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
