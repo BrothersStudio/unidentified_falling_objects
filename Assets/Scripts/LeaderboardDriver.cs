@@ -144,7 +144,8 @@ public class LeaderboardDriver : DynamoDbBase
             Id = in_id,
             Level = in_level,
             Name = in_name,
-            Score = in_score
+            Score = in_score,
+            Attempts = 1
         };
 
         LevelScore levelScoreRetrieved = null;
@@ -156,14 +157,15 @@ public class LeaderboardDriver : DynamoDbBase
                 if (result.Result != null)
                 {
                     levelScoreRetrieved = result.Result as LevelScore;
+                    levelScoreRetrieved.Attempts++;
 
                     if (levelScoreRetrieved.Score < in_score)
                     {
                         levelScoreRetrieved.Score = in_score;
                         levelScoreRetrieved.Name = in_name;
-                        Context.SaveAsync<LevelScore>(levelScoreRetrieved, (res) => { });
-                        Debug.Log("Updated old score");
                     }
+
+                    Context.SaveAsync<LevelScore>(levelScoreRetrieved, (res) => { });
                 }
                 else                                                                   //if we get an exception for Loading, the Id/Level combo doesn't exist in the DB so create a new record
                 {
@@ -232,5 +234,7 @@ public class LeaderboardDriver : DynamoDbBase
         public string Name { get; set; }
         [DynamoDBProperty]
         public int Score { get; set; }
+        [DynamoDBProperty]
+        public int Attempts { get; set; }
     }
 }
