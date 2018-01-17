@@ -160,6 +160,7 @@ public class LeaderboardDriver : DynamoDbBase
                     if (levelScoreRetrieved.Score < in_score)
                     {
                         levelScoreRetrieved.Score = in_score;
+                        levelScoreRetrieved.Name = in_name;
                         Context.SaveAsync<LevelScore>(levelScoreRetrieved, (res) => { });
                         Debug.Log("Updated old score");
                     }
