@@ -17,6 +17,14 @@ public static class SceneIndices
                 return 3;
             case "Pisa":
                 return 4;
+            case "SpaceNeedle":
+                return 5;
+            case "Taj":
+                return 6;
+            case "GoldenGate":
+                return 7;
+            case "Babel":
+                return 8;
         }
         return 0;
     }
