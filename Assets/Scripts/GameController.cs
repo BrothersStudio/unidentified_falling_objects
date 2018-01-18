@@ -40,6 +40,8 @@ public class GameController : MonoBehaviour
 
     public void RestartLevel()
     {
+        int scene_ind = SceneIndices.GetIndex(SceneManager.GetActiveScene().name);
+        LeaderboardDriver.PerformCreateOperation(scene_ind, 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
