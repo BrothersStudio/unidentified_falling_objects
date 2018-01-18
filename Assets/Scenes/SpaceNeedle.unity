@@ -1690,7 +1690,7 @@ Prefab:
         type: 2}
       propertyPath: block_wide
       value: 
-      objectReference: {fileID: 1262293231827440, guid: 9c80cc9b85115c04db7570a8223b63e8,
+      objectReference: {fileID: 1262293231827440, guid: 05edff6368dbbca43a222731f26a1deb,
         type: 2}
     - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
         type: 2}
@@ -1731,13 +1731,13 @@ Prefab:
         type: 2}
       propertyPath: block_small
       value: 
-      objectReference: {fileID: 1289414724409038, guid: de39bd9a46afae948912763e6486def0,
+      objectReference: {fileID: 1289414724409038, guid: d68933189e133f64e820e2599eba0f10,
         type: 2}
     - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
         type: 2}
       propertyPath: block_tall
       value: 
-      objectReference: {fileID: 1771817768054952, guid: eb9bece0a6bc7c14fa852937519cb1a7,
+      objectReference: {fileID: 1771817768054952, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4, type: 2}

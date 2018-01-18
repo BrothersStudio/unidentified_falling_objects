@@ -524,6 +524,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -866,7 +871,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1096,6 +1101,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 23650822385583304, guid: de39bd9a46afae948912763e6486def0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de39bd9a46afae948912763e6486def0, type: 2}
   m_IsPrefabParent: 0
@@ -1155,6 +1165,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -1467,6 +1482,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23328961559196174, guid: d20dba6687d2e4242ad5b93455c76cda,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20dba6687d2e4242ad5b93455c76cda, type: 2}
   m_IsPrefabParent: 0
@@ -2309,7 +2329,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2608,7 +2628,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3519,7 +3539,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3603,6 +3623,11 @@ Prefab:
       propertyPath: m_Name
       value: Wide Block (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 23328961559196174, guid: d20dba6687d2e4242ad5b93455c76cda,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20dba6687d2e4242ad5b93455c76cda, type: 2}
   m_IsPrefabParent: 0
@@ -4285,6 +4310,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 23650822385583304, guid: de39bd9a46afae948912763e6486def0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de39bd9a46afae948912763e6486def0, type: 2}
   m_IsPrefabParent: 0
@@ -4336,6 +4366,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -5141,7 +5176,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5403,6 +5438,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -6112,6 +6152,11 @@ Prefab:
       propertyPath: m_Name
       value: Stone_Block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23650822385583304, guid: de39bd9a46afae948912763e6486def0,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de39bd9a46afae948912763e6486def0, type: 2}
   m_IsPrefabParent: 0
@@ -6167,7 +6212,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6757,6 +6802,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -7565,6 +7615,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -8246,7 +8301,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8613,6 +8668,11 @@ Prefab:
       propertyPath: m_Name
       value: Wide Block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 23328961559196174, guid: d20dba6687d2e4242ad5b93455c76cda,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20dba6687d2e4242ad5b93455c76cda, type: 2}
   m_IsPrefabParent: 0
@@ -9629,7 +9689,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10502,7 +10562,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10690,6 +10750,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
@@ -10883,7 +10948,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10971,7 +11036,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11358,6 +11423,11 @@ Prefab:
       propertyPath: m_Name
       value: Wide Block (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 23328961559196174, guid: d20dba6687d2e4242ad5b93455c76cda,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20dba6687d2e4242ad5b93455c76cda, type: 2}
   m_IsPrefabParent: 0
@@ -12635,6 +12705,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23328961559196174, guid: d20dba6687d2e4242ad5b93455c76cda,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d20dba6687d2e4242ad5b93455c76cda, type: 2}
   m_IsPrefabParent: 0
@@ -12700,7 +12775,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12788,7 +12863,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 7fffa1007b6f25e44898eb524cf32868, type: 2}
+  - {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13075,6 +13150,11 @@ Prefab:
       propertyPath: m_Name
       value: Tall Block (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 23238489716046416, guid: a884776f8030af84aa7e46ae1465a796,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bfdf321501bea3f44ab24192ba9abf8c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
   m_IsPrefabParent: 0
