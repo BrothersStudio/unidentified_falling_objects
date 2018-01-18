@@ -92,7 +92,7 @@ public class PlacementChecker : MonoBehaviour
 
     private float CalculateScore(float added_score)
     {
-        added_score = (score_factor / (added_score + 1));
+        added_score = (score_factor / Mathf.Pow((added_score + 1), 2));
         score += (int)added_score;
         score_text.text = score.ToString();
         return added_score;
