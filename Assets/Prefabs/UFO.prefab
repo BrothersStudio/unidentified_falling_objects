@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4332669611806192}
   - component: {fileID: 114566654107734412}
   - component: {fileID: 114168839668879652}
+  - component: {fileID: 82489461210399062}
   m_Layer: 0
   m_Name: UFO
   m_TagString: Untagged
@@ -186,6 +187,86 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1275844207597418}
   m_Mesh: {fileID: 4300002, guid: 1b1283a6d02f8504a99ab1643c6d1f2d, type: 3}
+--- !u!82 &82489461210399062
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884226514343224}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.487
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114168839668879652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +282,8 @@ MonoBehaviour:
   block_small: {fileID: 1289414724409038, guid: 68d75a452f6da59478cba27011ee4d22,
     type: 2}
   block_tall: {fileID: 1771817768054952, guid: a884776f8030af84aa7e46ae1465a796, type: 2}
-  block_fat: {fileID: 0}
+  block_wide: {fileID: 0}
+  sphere: {fileID: 0}
 --- !u!114 &114566654107734412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,3 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a715ee54874f549bbd87700c204419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drop_clip: {fileID: 0}
+  main_menu_text: {fileID: 0}
+  reset_text: {fileID: 0}
+  infinite_mode: 0

@@ -17,6 +17,10 @@ public class UFO : MonoBehaviour
     float goal_height_buffer = 4.6f;
     float up_speed = 1f;
 
+    // Sound variables
+    AudioSource source;
+    public AudioClip drop_clip;
+
     // Block variables
     float drop_time = 0f;
     float auto_spawn_time = 3f;
@@ -41,6 +45,8 @@ public class UFO : MonoBehaviour
 
         checker = GameObject.Find("PlacementChecker").GetComponent<PlacementChecker>();
 
+        source = GetComponent<AudioSource>();
+
         // Spawn first block
         Instantiate(GetComponent<BlockQueue>().GetNextBlock(), transform);
     }
@@ -54,6 +60,9 @@ public class UFO : MonoBehaviour
         {
             if (GetComponentInChildren<Block>() != null)
             {
+                source.clip = drop_clip;
+                source.Play();
+
                 GetComponentInChildren<Block>().Fall();
                 GetComponentInChildren<Block>().gameObject.transform.parent = null;
                 drop_time = Time.timeSinceLevelLoad;
