@@ -17,6 +17,7 @@ public class BlockQueue : MonoBehaviour
         block_ind++;
         if (GetComponentInParent<UFO>().infinite_mode)
         {
+            return BlockSwitch(Random.Range(0, 3));
         }
         else if (block_ind < blocks.Count)
         {
