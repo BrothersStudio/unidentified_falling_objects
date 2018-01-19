@@ -213,7 +213,7 @@ public class LeaderboardDriver : DynamoDbBase
         };
 
         request.ConsistentRead = false;
-        request.Limit = 10;
+        request.Limit = 15;
         request.ExclusiveStartKey = lastKeyEvaluated;
         request.ScanIndexForward = false;
 
