@@ -21,7 +21,6 @@ public class BoxCollision : MonoBehaviour
     {
         if (other.tag == "Ground")
         {
-            //source.volume = GetComponentInParent<Rigidbody>().velocity.magnitude / 9f;
             source.clip = ground_sound;
             source.Play();
 
@@ -29,7 +28,6 @@ public class BoxCollision : MonoBehaviour
         }
         else if (other.tag == "Block")
         {
-            //source.volume = GetComponentInParent<Rigidbody>().velocity.magnitude / 9f;
             source.clip = block_sound;
             source.Play();
         }
