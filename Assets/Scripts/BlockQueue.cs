@@ -15,7 +15,10 @@ public class BlockQueue : MonoBehaviour
     public GameObject GetNextBlock()
     {
         block_ind++;
-        if (block_ind < blocks.Count)
+        if (GetComponentInParent<UFO>().infinite_mode)
+        {
+        }
+        else if (block_ind < blocks.Count)
         {
             return BlockSwitch(blocks[block_ind]);
         }

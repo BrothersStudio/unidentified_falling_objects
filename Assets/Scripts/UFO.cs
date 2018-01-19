@@ -13,6 +13,10 @@ public class UFO : MonoBehaviour
     float accel = 0.05f;
     bool deccel_flag = false;
 
+    float goal_height = 0f;
+    float goal_height_buffer = 5.6f;
+    float up_speed = 1f;
+
     // Block variables
     float drop_time = 0f;
     float auto_spawn_time = 3f;
@@ -27,6 +31,9 @@ public class UFO : MonoBehaviour
     // Canvas variables
     public GameObject main_menu_text;
     public GameObject reset_text;
+
+    // Infinite mode
+    public bool infinite_mode;
 
     private void Start()
     {
@@ -65,22 +72,31 @@ public class UFO : MonoBehaviour
     public void SpawnNewBlock()
     {
         // Judge placement of last block
-        checker.CheckActiveBlock();
+        goal_height = checker.CheckActiveBlock();
 
         if (GetComponentInChildren<Block>() == null)
         {
             GameObject next_block = GetComponent<BlockQueue>().GetNextBlock();
-            if (next_block != null)
+            if (next_block != null && !checker.IsLevelOver())
             {
                 Instantiate(next_block, transform);
             }
         }
     }
 
+# region MOVEMENT
     private void FixedUpdate ()
     {
         if (!checker.IsLevelOver())
         {
+            Vector3 new_position = transform.position;
+
+            // Fly upward if we need to get away from the last placed block
+            if (transform.position.y < goal_height + goal_height_buffer)
+            {
+                new_position.y += up_speed * Time.deltaTime;
+            }
+
             // Check if we need to start slowing down
             if (moving_left && transform.position.x < 0 && !deccel_flag)
             {
@@ -94,7 +110,6 @@ public class UFO : MonoBehaviour
             }
 
             // Apply velocity to ufo
-            Vector3 new_position = transform.position;
             if (moving_left)
             {
                 velocity = Mathf.Clamp(velocity + (Time.deltaTime * accel), -0.2f, -0.05f);
@@ -162,4 +177,6 @@ public class UFO : MonoBehaviour
             velocity = -init_vel;
         }
     }
+#endregion
+
 }

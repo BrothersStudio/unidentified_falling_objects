@@ -283,7 +283,7 @@ public class CameraTurnAndFace : MonoBehaviour
         }
         else if (current_target == level8)
         {
-            //SceneManager.LoadScene("Babel");
+            SceneManager.LoadScene("Babel");
         }
     }
 
