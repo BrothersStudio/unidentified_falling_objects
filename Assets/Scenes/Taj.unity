@@ -2016,12 +2016,12 @@ Prefab:
     - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
         type: 2}
       propertyPath: blocks.Array.data[4]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
         type: 2}
       propertyPath: blocks.Array.data[5]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
         type: 2}
@@ -2037,6 +2037,16 @@ Prefab:
         type: 2}
       propertyPath: blocks.Array.data[10]
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
+        type: 2}
+      propertyPath: blocks.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114168839668879652, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4,
+        type: 2}
+      propertyPath: blocks.Array.data[3]
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5c0498e93f2d2a4d9fd0c3ce6c6caf4, type: 2}
