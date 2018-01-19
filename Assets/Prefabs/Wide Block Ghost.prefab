@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33023451470822168}
   - component: {fileID: 65345335272350438}
   - component: {fileID: 23202237169610492}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Wide Block Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}

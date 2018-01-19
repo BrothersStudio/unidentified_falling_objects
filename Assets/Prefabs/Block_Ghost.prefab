@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33778071341579262}
   - component: {fileID: 65330262839768158}
   - component: {fileID: 23650822385583304}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Block_Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}

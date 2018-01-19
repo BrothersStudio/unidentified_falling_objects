@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33479188221587862}
   - component: {fileID: 65324942410562072}
   - component: {fileID: 23766139262545760}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Tall Block Ghost
   m_TagString: Ghost
   m_Icon: {fileID: 0}
