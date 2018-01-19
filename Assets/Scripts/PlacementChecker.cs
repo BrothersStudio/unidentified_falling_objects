@@ -71,6 +71,7 @@ public class PlacementChecker : MonoBehaviour
                 if (min_block != null)
                 {
                     blocks_dropped++;
+                    Debug.Log(min_dist);
                     float added_score = CalculateScore(min_dist);
                     SpawnScoreWord(added_score, blocks[i].transform.position);
 
