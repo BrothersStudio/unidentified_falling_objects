@@ -10,6 +10,14 @@ public class Block : MonoBehaviour
     public void Fall()
     {
         gameObject.AddComponent<Rigidbody>();
+        if (GetComponent<BoxCollider>() != null)
+        {
+            GetComponent<BoxCollider>().enabled = true;
+        }
+        else if (GetComponent<SphereCollider>() != null)
+        {
+            GetComponent<SphereCollider>().enabled = true;
+        }
     }
 
     private void Update()

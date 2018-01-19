@@ -14,7 +14,7 @@ public class UFO : MonoBehaviour
     bool deccel_flag = false;
 
     float goal_height = 0f;
-    float goal_height_buffer = 5.6f;
+    float goal_height_buffer = 4.6f;
     float up_speed = 1f;
 
     // Block variables
