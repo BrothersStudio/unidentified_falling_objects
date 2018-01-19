@@ -177,7 +177,7 @@ public class PlacementChecker : MonoBehaviour
         word.GetComponent<RectTransform>().anchorMax = viewportPoint;
 
         // Change color and word of score word as appropriate 
-        if ((score / score_factor) * 100 >= 90)
+        if ((score / score_factor) * 100 >= 80)
         {
             word.GetComponent<Text>().text = "Perfect!";
             word.GetComponent<Text>().color = Color.magenta;
@@ -185,7 +185,7 @@ public class PlacementChecker : MonoBehaviour
             word.GetComponent<AudioSource>().clip = perfect_sound;
             word.GetComponent<AudioSource>().Play();
         }
-        else if ((score / score_factor) * 100 >= 70)
+        else if ((score / score_factor) * 100 >= 50)
         {
             word.GetComponent<Text>().text = "Great!";
             word.GetComponent<Text>().color = Color.green;
@@ -193,7 +193,7 @@ public class PlacementChecker : MonoBehaviour
             word.GetComponent<AudioSource>().clip = great_sound;
             word.GetComponent<AudioSource>().Play();
         }
-        else if ((score / score_factor) * 100 >= 50)
+        else if ((score / score_factor) * 100 >= 25)
         {
             word.GetComponent<Text>().text = "Good!";
             word.GetComponent<Text>().color = Color.cyan;

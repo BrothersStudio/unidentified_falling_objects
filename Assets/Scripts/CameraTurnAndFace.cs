@@ -296,7 +296,7 @@ public class CameraTurnAndFace : MonoBehaviour
         left_button.SetActive(true);
         right_button.SetActive(true);
         play_button.SetActive(true);
-        score_button.SetActive(true);
+        //score_button.SetActive(true);
         score_table.SetActive(true);
     }
 
