@@ -41,7 +41,7 @@ public class PlacementChecker : MonoBehaviour
 
         if (infinite_mode)
         {
-            ground_counter.text = "Allowed on Ground: " + (grounded_limit).ToString();
+            ground_counter.text = "Allowed on Ground: " + (grounded_limit - 1).ToString();
         }
     }
 
@@ -139,7 +139,7 @@ public class PlacementChecker : MonoBehaviour
 
         if (infinite_mode)
         {
-            ground_counter.text = "Allowed on Ground: " + Mathf.Clamp((grounded_limit - grounded_blocks), 0, 100).ToString();
+            ground_counter.text = "Allowed on Ground: " + Mathf.Clamp((grounded_limit - grounded_blocks - 1), 0, 100).ToString();
         }
     }
 

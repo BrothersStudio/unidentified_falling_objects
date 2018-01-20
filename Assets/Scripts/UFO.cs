@@ -22,7 +22,7 @@ public class UFO : MonoBehaviour
 
     // Block variables
     float drop_time = 0f;
-    float auto_spawn_time = 3f;
+    float auto_spawn_time = 2.5f;
 
     // Judgement variables
     PlacementChecker checker;
