@@ -56,7 +56,8 @@ public class UFO : MonoBehaviour
         if ((Input.GetKey(KeyCode.DownArrow) ||
             Input.GetKey(KeyCode.Mouse0) ||
             Input.GetKey(KeyCode.Space)) &&
-            !checker.IsLevelOver())
+            !checker.IsLevelOver() &&
+            (Time.timeSinceLevelLoad > 0.5f))
         {
             if (GetComponentInChildren<Block>() != null)
             {
