@@ -43,6 +43,9 @@ public class CameraTurnAndFace : MonoBehaviour
     float move_speed = 30f;
     float turn_speed = 8f;
 
+    float keycooldown = 0.25f;
+    float last_key = 0f;
+
     // Scores
     private int current_level = 0;
     private List<Dictionary<string, AttributeValue>> scores;
@@ -80,6 +83,17 @@ public class CameraTurnAndFace : MonoBehaviour
                     score.GetComponent<Image>().color = current_color;
                 }
             }
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow) && Time.timeSinceLevelLoad > last_key + keycooldown)
+        {
+            ChangeLevels(true);
+            last_key = Time.timeSinceLevelLoad;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow) && Time.timeSinceLevelLoad > last_key + keycooldown)
+        {
+            ChangeLevels(false);
+            last_key = Time.timeSinceLevelLoad;
         }
     }
 
