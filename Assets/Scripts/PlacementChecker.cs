@@ -22,6 +22,7 @@ public class PlacementChecker : MonoBehaviour
     public AudioClip perfect_sound;
     public AudioClip great_sound;
     public AudioClip good_sound;
+    public AudioClip miss_sound;
 
     // Canvas
     public GameObject reset_text;
@@ -205,6 +206,9 @@ public class PlacementChecker : MonoBehaviour
         {
             word.GetComponent<Text>().text = "Miss!";
             word.GetComponent<Text>().color = Color.red;
+
+            word.GetComponent<AudioSource>().clip = miss_sound;
+            word.GetComponent<AudioSource>().Play();
         }
     }
 
