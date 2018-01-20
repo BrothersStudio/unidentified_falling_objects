@@ -203,7 +203,7 @@ public class PlacementChecker : MonoBehaviour
         }
         else 
         {
-            word.GetComponent<Text>().text = "Bad!";
+            word.GetComponent<Text>().text = "Miss!";
             word.GetComponent<Text>().color = Color.red;
         }
     }
