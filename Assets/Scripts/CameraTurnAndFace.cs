@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class CameraTurnAndFace : MonoBehaviour
 {
     public GameObject title;
-    public GameObject start_button;
     public GameObject name_panel;
 
     public GameObject left_button;
@@ -125,6 +124,7 @@ public class CameraTurnAndFace : MonoBehaviour
         else
         {
             SelectLevel("Pyramids");
+            last_key = Time.timeSinceLevelLoad;
         }
     }
 
@@ -309,7 +309,6 @@ public class CameraTurnAndFace : MonoBehaviour
     private void ToggleTitle()
     {
         title.SetActive(false);
-        start_button.SetActive(false);
         name_panel.SetActive(false);
 
         left_button.SetActive(true);
