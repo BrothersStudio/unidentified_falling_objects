@@ -8,9 +8,13 @@ public class GameController : MonoBehaviour
     string current_scene;
     private bool loading = false;
 
-    public void ReturnToMainMenu()
+    private void Start()
     {
         current_scene = SceneManager.GetActiveScene().name;
+    }
+
+    public void ReturnToMainMenu()
+    {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
         loading = true;
     }
@@ -20,6 +24,11 @@ public class GameController : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape))
         {
             QuitGame();
+        }
+
+        if (Input.GetKey(KeyCode.R) && current_scene != "MainMenu")
+        {
+            RestartLevel();
         }
 
         // Wait while main menu is loading before unloading current scene

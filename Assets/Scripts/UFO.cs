@@ -52,28 +52,30 @@ public class UFO : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKey(KeyCode.DownArrow) ||
-            Input.GetKey(KeyCode.Mouse0) ||
-            Input.GetKey(KeyCode.Space)) &&
-            !checker.IsLevelOver() &&
-            (Time.timeSinceLevelLoad > 0.5f))
+        if (!checker.IsLevelOver())
         {
-            if (GetComponentInChildren<Block>() != null)
+            if ((Input.GetKey(KeyCode.DownArrow) ||
+                Input.GetKey(KeyCode.Mouse0) ||
+                Input.GetKey(KeyCode.Space)) &&
+                (Time.timeSinceLevelLoad > 0.5f))
             {
-                source.clip = drop_clip;
-                source.Play();
+                if (GetComponentInChildren<Block>() != null)
+                {
+                    source.clip = drop_clip;
+                    source.Play();
 
-                GetComponentInChildren<Block>().Fall();
-                GetComponentInChildren<Block>().gameObject.transform.parent = null;
-                drop_time = Time.timeSinceLevelLoad;
+                    GetComponentInChildren<Block>().Fall();
+                    GetComponentInChildren<Block>().gameObject.transform.parent = null;
+                    drop_time = Time.timeSinceLevelLoad;
+                }
             }
-        }
 
-        if (GetComponentInChildren<Block>() == null)
-        {
-            if (drop_time + auto_spawn_time < Time.timeSinceLevelLoad)
+            if (GetComponentInChildren<Block>() == null)
             {
-                SpawnNewBlock();
+                if (drop_time + auto_spawn_time < Time.timeSinceLevelLoad)
+                {
+                    SpawnNewBlock();
+                }
             }
         }
     }
