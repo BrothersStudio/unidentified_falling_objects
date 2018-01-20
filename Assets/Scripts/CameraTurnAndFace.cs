@@ -95,6 +95,11 @@ public class CameraTurnAndFace : MonoBehaviour
             ChangeLevels(false);
             last_key = Time.timeSinceLevelLoad;
         }
+        else if ((Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space)) && Time.timeSinceLevelLoad > last_key + keycooldown)
+        {
+            PlayLevel();
+            last_key = Time.timeSinceLevelLoad;
+        }
     }
 
     private void FixedUpdate ()
