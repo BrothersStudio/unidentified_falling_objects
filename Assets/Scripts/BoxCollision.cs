@@ -13,6 +13,8 @@ public class BoxCollision : MonoBehaviour
     int sounds_i_made = 0;
     int max_sounds = 4;
 
+    private ParticleSystem system;
+
     CameraShake cam_shake;
 
     PlacementChecker checker;
@@ -45,6 +47,8 @@ public class BoxCollision : MonoBehaviour
                 source.clip = current_ground_sound;
                 source.Play();
             }
+
+            GetComponentInParent<ParticleSystem>().Play();
 
             checker.BlockHitGround(+1);
 
