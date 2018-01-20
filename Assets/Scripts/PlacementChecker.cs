@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Amazon.DynamoDBv2.Model;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,14 @@ public class PlacementChecker : MonoBehaviour
 
     // Canvas
     public GameObject reset_text;
+    public GameObject main_menu_button;
+    public GameObject reset_button;
+    public GameObject end_game_menu;
+    public GameObject leaderboard;
+
+    private bool name_on_board = false;
+    private Transform score_holder;
+    public GameObject score_prefab;
 
     // Infinite
     bool infinite_mode = false;
@@ -43,6 +52,9 @@ public class PlacementChecker : MonoBehaviour
         {
             ground_counter.text = "Allowed on Ground: " + (grounded_limit - 1).ToString();
         }
+
+        score_holder = leaderboard.transform.Find("Score Holder");
+        LeaderboardDriver.FindScoresForLevel(SceneIndices.GetIndex(SceneManager.GetActiveScene().name));
     }
 
     private void Update()
@@ -54,6 +66,67 @@ public class PlacementChecker : MonoBehaviour
             LeaderboardDriver.PerformCreateOperation(scene_ind, score);
 
             score_sent = true;
+        }
+
+        // Read scoreboard scores as necessary
+        if (LeaderboardDriver.Readable && IsLevelOver() && score_holder.childCount == 0)
+        {
+            leaderboard.transform.Find("Loading...").gameObject.SetActive(false);
+
+            List<Dictionary<string, AttributeValue>> scores = LeaderboardDriver.Results;
+
+            foreach (var item in scores)
+            {
+                if (score_holder.transform.childCount < 15)
+                {
+                    string score_string = item["Score"].N;
+                    int score_int = int.Parse(score_string);
+
+                    if (score > score_int && !name_on_board)
+                    {
+                        name_on_board = true;
+                        GameObject user_score_object = Instantiate(score_prefab, score_holder);
+                        user_score_object.transform.Find("Name").GetComponent<Text>().text = LeaderboardDriver.Name;
+                        user_score_object.transform.Find("Score").GetComponent<Text>().text = score.ToString();
+
+                        Color current_color = user_score_object.GetComponent<Image>().color;
+                        current_color.a = 1;
+                        user_score_object.GetComponent<Image>().color = current_color;
+                    }
+
+                    GameObject score_object = Instantiate(score_prefab, score_holder);
+                    score_object.transform.Find("Name").GetComponent<Text>().text = item["Name"].S;
+                    score_object.transform.Find("Score").GetComponent<Text>().text = score_string;
+
+                    // If we see the current user's score, check if the new one is higher
+                    if (item["Id"].S == LeaderboardDriver.Id)
+                    {
+                        if (name_on_board)
+                        {
+                            Destroy(score_object);
+                        }
+                        else
+                        {
+                            name_on_board = true;
+                            Color current_color = score_object.GetComponent<Image>().color;
+                            current_color.a = 1;
+                            score_object.GetComponent<Image>().color = current_color;
+                        }
+                    }
+                }
+            }
+
+            if (scores.Count == 0)
+            {
+                name_on_board = true;
+                GameObject user_score_object = Instantiate(score_prefab, score_holder);
+                user_score_object.transform.Find("Name").GetComponent<Text>().text = LeaderboardDriver.Name;
+                user_score_object.transform.Find("Score").GetComponent<Text>().text = score.ToString();
+
+                Color current_color = user_score_object.GetComponent<Image>().color;
+                current_color.a = 1;
+                user_score_object.GetComponent<Image>().color = current_color;
+            }
         }
 
         if (infinite_mode)
@@ -228,5 +301,19 @@ public class PlacementChecker : MonoBehaviour
     public bool IsLevelOver()
     {
         return level_done;
+    }
+
+    public void UFOIsOffScreen()
+    {
+        // Turn off buttons from when level is being played
+        reset_button.SetActive(false);
+        reset_text.SetActive(false);
+        score_text.gameObject.SetActive(false);
+        main_menu_button.SetActive(false);
+
+        // Turn on and execute end game menus
+        end_game_menu.transform.Find("Score").GetComponent<Text>().text = score.ToString();
+        end_game_menu.SetActive(true);
+        leaderboard.SetActive(true);
     }
 }

@@ -31,10 +31,6 @@ public class UFO : MonoBehaviour
     float end_time;
     bool up_part = false;
 
-    // Canvas variables
-    public GameObject main_menu_text;
-    public GameObject reset_text;
-
     // Infinite mode
     public bool infinite_mode;
 
@@ -169,8 +165,7 @@ public class UFO : MonoBehaviour
 
             if (!GetComponentInChildren<Renderer>().isVisible)
             {
-                main_menu_text.SetActive(true);
-                reset_text.SetActive(true);
+                checker.UFOIsOffScreen();
             }
         }
 	}

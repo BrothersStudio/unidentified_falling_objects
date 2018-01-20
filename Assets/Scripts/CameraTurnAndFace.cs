@@ -9,6 +9,7 @@ public class CameraTurnAndFace : MonoBehaviour
 {
     public GameObject title;
     public GameObject name_panel;
+    public GameObject any_key_checker;
 
     public GameObject left_button;
     public GameObject right_button;
@@ -47,7 +48,6 @@ public class CameraTurnAndFace : MonoBehaviour
 
     // Scores
     private int current_level = 0;
-    private List<Dictionary<string, AttributeValue>> scores;
     public GameObject score_prefab;
     Transform score_holder;
     public GameObject loading_text;
@@ -66,7 +66,7 @@ public class CameraTurnAndFace : MonoBehaviour
         {
             loading_text.SetActive(false);
 
-            scores = LeaderboardDriver.Results;
+            List<Dictionary<string, AttributeValue>> scores = LeaderboardDriver.Results;
 
             foreach (var item in scores)
             {
@@ -310,6 +310,7 @@ public class CameraTurnAndFace : MonoBehaviour
     {
         title.SetActive(false);
         name_panel.SetActive(false);
+        any_key_checker.SetActive(false);
 
         left_button.SetActive(true);
         right_button.SetActive(true);
