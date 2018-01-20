@@ -12,23 +12,30 @@ public class BlockQueue : MonoBehaviour
     public GameObject block_wide;
     public GameObject sphere;
 
-    public GameObject GetNextBlock()
+    private void Start()
+    {
+        if (GetComponentInParent<UFO>().infinite_mode)
+        {
+            random_block_list.Add(2);
+            for (int i = 0; i < 1000; i++)
+            {
+                random_block_list.Add(Random.Range(0, 3));
+            }
+        }
+    }
+
+    public NextBlocks GetNextBlock()
     {
         block_ind++;
         if (GetComponentInParent<UFO>().infinite_mode)
         {
-            if (block_ind == 0)
-            {
-                return BlockSwitch(2);
-            }
-            else
-            {
-                return BlockSwitch(Random.Range(0, 3));
-            }
+            NextBlocks next = new NextBlocks(BlockSwitch(random_block_list[block_ind]), BlockSwitch(random_block_list[block_ind + 1]));
+            return next;
         }
         else if (block_ind < blocks.Count)
         {
-            return BlockSwitch(blocks[block_ind]);
+            NextBlocks next = new NextBlocks(BlockSwitch(blocks[block_ind]));
+            return next;
         }
         else
         {
@@ -50,5 +57,23 @@ public class BlockQueue : MonoBehaviour
                 return sphere;
         }
         return new GameObject();
+    }
+}
+
+public class NextBlocks
+{
+    public GameObject next;
+    public GameObject after;
+
+    public NextBlocks(GameObject block1)
+    {
+        next = block1;
+        after = null;
+    }
+
+    public NextBlocks(GameObject block1, GameObject block2)
+    {
+        next = block1;
+        after = block2;
     }
 }

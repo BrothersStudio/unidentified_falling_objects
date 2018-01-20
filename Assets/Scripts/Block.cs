@@ -23,14 +23,14 @@ public class Block : MonoBehaviour
     private void Update()
     {
         // Checking to see if it's stopped moving
-        if (GetComponent<Rigidbody>() != null)
+        if (GetComponent<Rigidbody>() != null && !GetComponentInChildren<BoxCollision>().for_show)
         {
             if (GetComponent<Rigidbody>().velocity.y > 0)
             {
                 detached = true;
             }
 
-            if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.y <= 0)
+            if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.magnitude <= 0.01)
             {
                 GameObject.Find("UFO").GetComponent<UFO>().SpawnNewBlock();
             }

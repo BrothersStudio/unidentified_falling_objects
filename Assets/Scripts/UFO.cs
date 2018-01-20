@@ -43,7 +43,7 @@ public class UFO : MonoBehaviour
         source = GetComponent<AudioSource>();
 
         // Spawn first block
-        Instantiate(GetComponent<BlockQueue>().GetNextBlock(), transform);
+        Instantiate(HandoffNextBlock(GetComponent<BlockQueue>().GetNextBlock()), transform);
     }
 
     private void Update()
@@ -83,12 +83,23 @@ public class UFO : MonoBehaviour
 
         if (GetComponentInChildren<Block>() == null)
         {
-            GameObject next_block = GetComponent<BlockQueue>().GetNextBlock();
+            GameObject next_block = HandoffNextBlock(GetComponent<BlockQueue>().GetNextBlock());
             if (next_block != null && !checker.IsLevelOver())
             {
                 Instantiate(next_block, transform);
             }
         }
+    }
+
+    private GameObject HandoffNextBlock(NextBlocks next)
+    {
+        if (next == null)
+        {
+            return null;
+        }
+
+        checker.DisplayNextBlock(next.after);
+        return next.next;
     }
 
 # region MOVEMENT
