@@ -252,3 +252,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ground_sound: {fileID: 8300000, guid: 53ee8260ff3a64f4496872fafdbb9820, type: 3}
   block_sound: {fileID: 8300000, guid: 4d761ae78c4c8324b9a9cd9e87fb4293, type: 3}
+  water_sound: {fileID: 8300000, guid: be304fa7ceb60d344aefa0edab92b740, type: 3}
