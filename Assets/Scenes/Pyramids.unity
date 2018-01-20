@@ -906,6 +906,7 @@ MonoBehaviour:
   perfect_sound: {fileID: 8300000, guid: f2feb7ad8498a314fbcb857575353710, type: 3}
   great_sound: {fileID: 8300000, guid: ee650748981ec104892efac2c3b3f4e6, type: 3}
   good_sound: {fileID: 8300000, guid: d27d3806154d2ba4ea3f7a69e471daa3, type: 3}
+  miss_sound: {fileID: 8300000, guid: 0d5dbec18cc73ec428a391ad548ec2e7, type: 3}
   reset_text: {fileID: 528234594}
   ground_counter: {fileID: 0}
 --- !u!4 &871192835
