@@ -6,6 +6,7 @@ public class BlockQueue : MonoBehaviour
 {
     private int block_ind = -1;
     public List<int> blocks;
+    private List<int> random_block_list = new List<int>();
 
     public GameObject block_small;
     public GameObject block_tall;
