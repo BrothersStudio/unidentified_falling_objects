@@ -531,6 +531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: {fileID: 1145790805}
   name_panel: {fileID: 606672788}
+  any_key_checker: {fileID: 1041794908}
   left_button: {fileID: 1539104394}
   right_button: {fileID: 1555470336}
   play_button: {fileID: 1385620136}
