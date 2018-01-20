@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BoxCollision : MonoBehaviour
 {
     AudioSource source;
+    private AudioClip current_ground_sound;
     public AudioClip ground_sound;
     public AudioClip block_sound;
+    public AudioClip water_sound;
     int sounds_i_made = 0;
     int max_sounds = 4;
 
@@ -21,6 +24,15 @@ public class BoxCollision : MonoBehaviour
         cam_shake = Camera.main.GetComponent<CameraShake>();
 
         checker = GameObject.Find("PlacementChecker").GetComponent<PlacementChecker>();
+
+        if (SceneManager.GetActiveScene().name == "GoldenGate")
+        {
+            current_ground_sound = water_sound;
+        }
+        else
+        {
+            current_ground_sound = ground_sound;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -30,7 +42,7 @@ public class BoxCollision : MonoBehaviour
             if (sounds_i_made < max_sounds)
             {
                 sounds_i_made++;
-                source.clip = ground_sound;
+                source.clip = current_ground_sound;
                 source.Play();
             }
 
