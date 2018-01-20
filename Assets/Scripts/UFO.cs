@@ -5,8 +5,7 @@ using UnityEngine;
 public class UFO : MonoBehaviour
 {
     // Movement variables
-    float left_bound = -5.8f;
-    float right_bound = 5.8f;
+    public float left_bound = -5.8f;
     bool moving_left = false;
     float init_vel;
     float velocity = 0.1f;
@@ -136,7 +135,7 @@ public class UFO : MonoBehaviour
             {
                 SwitchDirections();
             }
-            else if (!moving_left && transform.position.x > right_bound)
+            else if (!moving_left && transform.position.x > -left_bound)
             {
                 SwitchDirections();
             }
