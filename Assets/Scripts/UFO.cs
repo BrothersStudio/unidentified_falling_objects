@@ -22,7 +22,7 @@ public class UFO : MonoBehaviour
 
     // Block variables
     float drop_time = 0f;
-    float auto_spawn_time = 2.2f;
+    float auto_spawn_time = 3f;
 
     // Judgement variables
     PlacementChecker checker;
@@ -30,6 +30,8 @@ public class UFO : MonoBehaviour
     // Flying away variables
     float end_time;
     bool up_part = false;
+    bool go_right = false;
+    bool go_left = false;
 
     // Infinite mode
     public bool infinite_mode;
@@ -167,16 +169,24 @@ public class UFO : MonoBehaviour
             {
                 GetComponent<Rigidbody>().AddForce(new Vector3(0f, -4f), ForceMode.Acceleration);
             }
-            else
+            else if (!up_part)
             {
                 up_part = true;
+                if (transform.position.x > 0)
+                {
+                    go_left = true;
+                }
+                else
+                {
+                    go_right = true;
+                }
             }
 
-            if (up_part && transform.position.x > 0)
+            if (up_part && go_left)
             {
                 GetComponent<Rigidbody>().AddForce(new Vector3(-5f, 5f, 2f), ForceMode.Acceleration);
             }
-            else if (up_part && transform.position.x >= 0)
+            else if (up_part && go_right)
             {
                 GetComponent<Rigidbody>().AddForce(new Vector3(5f, 5f, 2f), ForceMode.Acceleration);
             }
@@ -184,6 +194,7 @@ public class UFO : MonoBehaviour
             if (!GetComponentInChildren<Renderer>().isVisible)
             {
                 checker.UFOIsOffScreen();
+                Destroy(gameObject);
             }
         }
 	}

@@ -36,6 +36,7 @@ public class PlacementChecker : MonoBehaviour
     private bool name_on_board = false;
     private Transform score_holder;
     public GameObject score_prefab;
+    public ParticleSystem fireworks;
 
     // Infinite
     bool infinite_mode = false;
@@ -137,6 +138,7 @@ public class PlacementChecker : MonoBehaviour
             if (grounded_blocks >= grounded_limit)
             {
                 level_done = true;
+                fireworks.Play();
             }
         }
     }
@@ -309,6 +311,7 @@ public class PlacementChecker : MonoBehaviour
             }
         }
         level_done = true;
+        fireworks.Play();
     }
 
     public bool IsLevelOver()

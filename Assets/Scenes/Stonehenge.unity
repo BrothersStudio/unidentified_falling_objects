@@ -1713,6 +1713,7 @@ MonoBehaviour:
   end_screen: 0
   score_prefab: {fileID: 1063562126706078, guid: 60e98255999b15d4284791b13deb5457,
     type: 2}
+  fireworks: {fileID: 1711659648}
   ground_counter: {fileID: 0}
   next_block_location: {fileID: 0}
 --- !u!4 &871192835
@@ -2577,6 +2578,63 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1691754559}
+--- !u!1001 &1711659647
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.6072998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 8.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197151292109284, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 198907553923267764, guid: ff9bec9df98b68143bd47b1b08b298a3,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 198907553923267764, guid: ff9bec9df98b68143bd47b1b08b298a3,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1641678618
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ff9bec9df98b68143bd47b1b08b298a3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!198 &1711659648 stripped
+ParticleSystem:
+  m_PrefabParentObject: {fileID: 198907553923267764, guid: ff9bec9df98b68143bd47b1b08b298a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1711659647}
 --- !u!1001 &1724023394
 Prefab:
   m_ObjectHideFlags: 0

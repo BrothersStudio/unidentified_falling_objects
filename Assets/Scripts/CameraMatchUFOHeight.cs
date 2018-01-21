@@ -39,7 +39,7 @@ public class CameraMatchUFOHeight : MonoBehaviour
 
         if (back_to_start)
         {
-            transform.position = Vector3.MoveTowards(transform.position, original_position, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, original_position, 0.2f);
         }
 	}
 }
