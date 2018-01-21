@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CameraShake : MonoBehaviour
 {
+    private PlacementChecker checker;
+
 	private Transform camTransform;
 	
 	// How long the object should shake for.
@@ -17,7 +19,9 @@ public class CameraShake : MonoBehaviour
 	void Awake()
 	{
 	    camTransform = GetComponent(typeof(Transform)) as Transform;
-	}
+
+        checker = GameObject.Find("PlacementChecker").GetComponent<PlacementChecker>();
+    }
 	
 	void OnEnable()
 	{
@@ -34,17 +38,20 @@ public class CameraShake : MonoBehaviour
 
 	void Update()
 	{
-        if (shakeDuration > 0)
+        if (!checker.IsLevelOver())
         {
-            gameObject.transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
-            shakeDuration -= Time.deltaTime * decreaseFactor;
-            shakeAmount -= Time.deltaTime * decreaseFactor;
-            //if (shakeAmount <= 0) shakeAmount = 0;
-        }
-        else
-        {
-            shakeDuration = 0f;
-            gameObject.transform.localPosition = originalPos;
+            if (shakeDuration > 0)
+            {
+                gameObject.transform.localPosition = originalPos + Random.insideUnitSphere * shakeAmount;
+                shakeDuration -= Time.deltaTime * decreaseFactor;
+                shakeAmount -= Time.deltaTime * decreaseFactor;
+                //if (shakeAmount <= 0) shakeAmount = 0;
+            }
+            else
+            {
+                shakeDuration = 0f;
+                gameObject.transform.localPosition = originalPos;
+            }
         }
     }
 }

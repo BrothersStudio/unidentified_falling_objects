@@ -14,7 +14,7 @@ public class UFO : MonoBehaviour
 
     float goal_height = 0f;
     float goal_height_buffer = 4.6f;
-    float up_speed = 1f;
+    float up_speed = 0.8f;
 
     // Sound variables
     AudioSource source;

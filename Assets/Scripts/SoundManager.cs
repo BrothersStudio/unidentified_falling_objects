@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour {
 
-    public AudioSource fxSource;
     public AudioSource musicSource;
     public static SoundManager instance = null;
     public AudioClip inLevelMusic;
@@ -23,7 +22,7 @@ public class SoundManager : MonoBehaviour {
 
     private void OnDisable()
     {
-        SceneManager.activeSceneChanged += CheckChange;
+        SceneManager.activeSceneChanged -= CheckChange;
     }
 
     void CheckChange(Scene previous, Scene next)
@@ -31,35 +30,29 @@ public class SoundManager : MonoBehaviour {
         if (next.name == "MainMenu")
         {
             PlayMusic(menuMusic);
-            Debug.Log("Playing menu");
         }
         else
         {
             if (musicSource.clip != inLevelMusic)
             {
                 PlayMusic(inLevelMusic);
-                Debug.Log("In Level Music");
             }
-            
         }
     }
 
     void Awake ()
     {
-
         if (instance == null)
+        {
             instance = this;
+        }
         else if (instance != this)
+        {
             Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(gameObject);
 	}
-
-    public void PlaySingleFx(AudioClip clip)
-    {
-        fxSource.clip = clip;
-        fxSource.Play();
-    }
 
     public void PlayMusic(AudioClip clip)
     {

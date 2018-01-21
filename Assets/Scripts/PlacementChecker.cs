@@ -32,6 +32,7 @@ public class PlacementChecker : MonoBehaviour
     public GameObject end_game_menu;
     public GameObject leaderboard;
 
+    public bool end_screen = false;
     private bool name_on_board = false;
     private Transform score_holder;
     public GameObject score_prefab;
@@ -317,6 +318,8 @@ public class PlacementChecker : MonoBehaviour
 
     public void UFOIsOffScreen()
     {
+        end_screen = true;
+
         // Turn off buttons from when level is being played
         reset_button.SetActive(false);
         reset_text.SetActive(false);

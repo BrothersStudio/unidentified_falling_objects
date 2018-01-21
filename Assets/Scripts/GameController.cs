@@ -37,6 +37,8 @@ public class GameController : MonoBehaviour
             GameObject[] main_objects = SceneManager.GetSceneByName("MainMenu").GetRootGameObjects();
             for (int i = 0; i < main_objects.Length; i++)
             {
+                Camera.main.GetComponent<AudioListener>().enabled = false;
+
                 if (main_objects[i].name == "Main Menu Camera")
                 {
                     main_objects[i].GetComponent<CameraTurnAndFace>().SelectLevel(current_scene);
