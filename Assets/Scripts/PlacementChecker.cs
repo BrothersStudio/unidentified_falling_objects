@@ -41,6 +41,8 @@ public class PlacementChecker : MonoBehaviour
     int grounded_blocks = 0;
     int grounded_limit = 4;
     public Text ground_counter;
+    GameObject visible_next_block;
+    public Transform next_block_location;
 
     private void Start()
     {
@@ -136,6 +138,16 @@ public class PlacementChecker : MonoBehaviour
                 level_done = true;
             }
         }
+    }
+
+    public void DisplayNextBlock(GameObject next_block)
+    {
+        Destroy(visible_next_block);
+        visible_next_block = Instantiate(next_block, next_block_location.position, Quaternion.identity);
+        visible_next_block.AddComponent<Rigidbody>();
+        visible_next_block.GetComponent<BoxCollider>().enabled = true;
+        visible_next_block.GetComponentInChildren<BoxCollision>().for_show = true;
+        visible_next_block.tag = "Untagged";
     }
 
     // Called when UFO spawns in new block. Judges placement of last block.

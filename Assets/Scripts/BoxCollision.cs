@@ -13,6 +13,8 @@ public class BoxCollision : MonoBehaviour
     int sounds_i_made = 0;
     int max_sounds = 4;
 
+    public bool for_show = false;
+
     private ParticleSystem system;
 
     CameraShake cam_shake;
@@ -50,29 +52,45 @@ public class BoxCollision : MonoBehaviour
 
             //GetComponentInParent<ParticleSystem>().Play();
 
-            checker.BlockHitGround(+1);
-
-            if (!checker.IsLevelOver())
+            if (!for_show)
             {
-                cam_shake.ShakeCamera(0.15f);
+                if (sounds_i_made < max_sounds)
+                {
+                    sounds_i_made++;
+                    source.clip = current_ground_sound;
+                    source.Play();
+                }
+
+                checker.BlockHitGround(+1);
+
+                if (!checker.IsLevelOver())
+                {
+                    cam_shake.ShakeCamera(0.15f);
+                }
             }
         }
         else if (other.tag == "Block")
         {
-            if (sounds_i_made < max_sounds)
+            if (!for_show)
             {
-                sounds_i_made++;
-                source.clip = block_sound;
-                source.Play();
+                if (sounds_i_made < max_sounds)
+                {
+                    sounds_i_made++;
+                    source.clip = block_sound;
+                    source.Play();
+                }
             }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Ground")
+        if (!for_show)
         {
-            checker.BlockHitGround(-1);
+            if (other.tag == "Ground")
+            {
+                checker.BlockHitGround(-1);
+            }
         }
     }
 }
