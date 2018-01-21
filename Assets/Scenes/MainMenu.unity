@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 5697598}
   - component: {fileID: 5697597}
   - component: {fileID: 5697596}
-  - component: {fileID: 5697595}
   m_Layer: 0
   m_Name: Sand_Block (15)
   m_TagString: Block
@@ -134,18 +133,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5697595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 5697594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &5697596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -214,7 +201,6 @@ GameObject:
   - component: {fileID: 7460625}
   - component: {fileID: 7460624}
   - component: {fileID: 7460623}
-  - component: {fileID: 7460622}
   m_Layer: 0
   m_Name: Sand_Block (73)
   m_TagString: Block
@@ -236,18 +222,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7460622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 7460620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &7460623
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -344,7 +318,6 @@ GameObject:
   - component: {fileID: 10252158}
   - component: {fileID: 10252157}
   - component: {fileID: 10252156}
-  - component: {fileID: 10252155}
   m_Layer: 0
   m_Name: Wide Block (4)
   m_TagString: Block
@@ -366,18 +339,6 @@ Transform:
   m_Father: {fileID: 439509743}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &10252155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 10252153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &10252156
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -649,7 +610,6 @@ GameObject:
   - component: {fileID: 15318942}
   - component: {fileID: 15318941}
   - component: {fileID: 15318940}
-  - component: {fileID: 15318939}
   m_Layer: 0
   m_Name: Wide Block (1)
   m_TagString: Block
@@ -657,18 +617,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &15318939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 15318938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &15318940
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -836,7 +784,6 @@ GameObject:
   - component: {fileID: 33163504}
   - component: {fileID: 33163503}
   - component: {fileID: 33163502}
-  - component: {fileID: 33163501}
   m_Layer: 0
   m_Name: Sand_Block (2)
   m_TagString: Block
@@ -844,18 +791,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &33163501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 33163500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &33163502
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -924,7 +859,6 @@ GameObject:
   - component: {fileID: 39543458}
   - component: {fileID: 39543457}
   - component: {fileID: 39543456}
-  - component: {fileID: 39543455}
   m_Layer: 0
   m_Name: Sand_Block (90)
   m_TagString: Block
@@ -946,18 +880,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 91
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &39543455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 39543453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &39543456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1040,7 +962,6 @@ GameObject:
   - component: {fileID: 46564330}
   - component: {fileID: 46564329}
   - component: {fileID: 46564328}
-  - component: {fileID: 46564327}
   m_Layer: 0
   m_Name: Sand_Block (63)
   m_TagString: Block
@@ -1062,18 +983,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 64
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46564327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 46564325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &46564328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1142,7 +1051,6 @@ GameObject:
   - component: {fileID: 50046908}
   - component: {fileID: 50046907}
   - component: {fileID: 50046906}
-  - component: {fileID: 50046905}
   m_Layer: 0
   m_Name: Tall Block (3)
   m_TagString: Block
@@ -1150,18 +1058,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &50046905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 50046904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &50046906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1298,7 +1194,6 @@ GameObject:
   - component: {fileID: 52922098}
   - component: {fileID: 52922097}
   - component: {fileID: 52922096}
-  - component: {fileID: 52922095}
   m_Layer: 0
   m_Name: Sand_Block (5)
   m_TagString: Block
@@ -1306,18 +1201,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &52922095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 52922094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &52922096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1386,7 +1269,6 @@ GameObject:
   - component: {fileID: 53638143}
   - component: {fileID: 53638142}
   - component: {fileID: 53638141}
-  - component: {fileID: 53638140}
   m_Layer: 0
   m_Name: Sand_Block (66)
   m_TagString: Block
@@ -1408,18 +1290,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 67
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &53638140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 53638138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &53638141
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1609,7 +1479,6 @@ GameObject:
   - component: {fileID: 59076080}
   - component: {fileID: 59076079}
   - component: {fileID: 59076078}
-  - component: {fileID: 59076077}
   m_Layer: 0
   m_Name: Sand_Block (51)
   m_TagString: Block
@@ -1631,18 +1500,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &59076077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 59076075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &59076078
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1711,7 +1568,6 @@ GameObject:
   - component: {fileID: 68949081}
   - component: {fileID: 68949080}
   - component: {fileID: 68949079}
-  - component: {fileID: 68949078}
   m_Layer: 0
   m_Name: Sand_Block (115)
   m_TagString: Block
@@ -1733,18 +1589,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 116
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &68949078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 68949076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &68949079
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1853,7 +1697,6 @@ GameObject:
   - component: {fileID: 69513148}
   - component: {fileID: 69513147}
   - component: {fileID: 69513146}
-  - component: {fileID: 69513145}
   m_Layer: 0
   m_Name: Sand_Block (8)
   m_TagString: Block
@@ -1861,18 +1704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &69513145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 69513144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &69513146
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1941,7 +1772,6 @@ GameObject:
   - component: {fileID: 74930543}
   - component: {fileID: 74930542}
   - component: {fileID: 74930541}
-  - component: {fileID: 74930540}
   m_Layer: 0
   m_Name: Wide Block
   m_TagString: Block
@@ -1949,18 +1779,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &74930540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 74930539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &74930541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2029,7 +1847,6 @@ GameObject:
   - component: {fileID: 85002897}
   - component: {fileID: 85002896}
   - component: {fileID: 85002895}
-  - component: {fileID: 85002894}
   m_Layer: 0
   m_Name: Sand_Block (123)
   m_TagString: Block
@@ -2051,18 +1868,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &85002894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 85002892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &85002895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2131,7 +1936,6 @@ GameObject:
   - component: {fileID: 89510632}
   - component: {fileID: 89510631}
   - component: {fileID: 89510630}
-  - component: {fileID: 89510629}
   m_Layer: 0
   m_Name: Sand_Block (100)
   m_TagString: Block
@@ -2153,18 +1957,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &89510629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 89510627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &89510630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2233,7 +2025,6 @@ GameObject:
   - component: {fileID: 89637123}
   - component: {fileID: 89637122}
   - component: {fileID: 89637121}
-  - component: {fileID: 89637120}
   m_Layer: 0
   m_Name: Sand_Block (23)
   m_TagString: Block
@@ -2255,18 +2046,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &89637120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 89637118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &89637121
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2335,7 +2114,6 @@ GameObject:
   - component: {fileID: 91765290}
   - component: {fileID: 91765289}
   - component: {fileID: 91765288}
-  - component: {fileID: 91765287}
   m_Layer: 0
   m_Name: Tall_Block_Metal (2)
   m_TagString: Block
@@ -2343,18 +2121,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &91765287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 91765286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &91765288
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2423,7 +2189,6 @@ GameObject:
   - component: {fileID: 107845333}
   - component: {fileID: 107845332}
   - component: {fileID: 107845331}
-  - component: {fileID: 107845330}
   m_Layer: 0
   m_Name: Sand_Block (52)
   m_TagString: Block
@@ -2445,18 +2210,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &107845330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 107845328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &107845331
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2525,7 +2278,6 @@ GameObject:
   - component: {fileID: 108632479}
   - component: {fileID: 108632478}
   - component: {fileID: 108632477}
-  - component: {fileID: 108632476}
   m_Layer: 0
   m_Name: Wide_Block_Metal (2)
   m_TagString: Block
@@ -2533,18 +2285,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &108632476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 05edff6368dbbca43a222731f26a1deb,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 108632475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &108632477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2613,7 +2353,6 @@ GameObject:
   - component: {fileID: 109688746}
   - component: {fileID: 109688745}
   - component: {fileID: 109688744}
-  - component: {fileID: 109688743}
   m_Layer: 0
   m_Name: Sand_Block (82)
   m_TagString: Block
@@ -2635,18 +2374,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 83
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &109688743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 109688741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &109688744
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2915,7 +2642,6 @@ GameObject:
   - component: {fileID: 140859970}
   - component: {fileID: 140859969}
   - component: {fileID: 140859968}
-  - component: {fileID: 140859967}
   m_Layer: 0
   m_Name: Wide Block (5)
   m_TagString: Block
@@ -2937,18 +2663,6 @@ Transform:
   m_Father: {fileID: 439509743}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &140859967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 140859965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &140859968
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3017,7 +2731,6 @@ GameObject:
   - component: {fileID: 143307718}
   - component: {fileID: 143307717}
   - component: {fileID: 143307716}
-  - component: {fileID: 143307715}
   m_Layer: 0
   m_Name: Sand_Block (33)
   m_TagString: Block
@@ -3039,18 +2752,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &143307715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143307713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &143307716
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3119,7 +2820,6 @@ GameObject:
   - component: {fileID: 146579994}
   - component: {fileID: 146579993}
   - component: {fileID: 146579992}
-  - component: {fileID: 146579991}
   m_Layer: 0
   m_Name: Sand_Block (83)
   m_TagString: Block
@@ -3141,18 +2841,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 84
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &146579991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 146579989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &146579992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3307,7 +2995,6 @@ GameObject:
   - component: {fileID: 177804279}
   - component: {fileID: 177804278}
   - component: {fileID: 177804277}
-  - component: {fileID: 177804276}
   m_Layer: 0
   m_Name: Sand_Block (12)
   m_TagString: Block
@@ -3315,18 +3002,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &177804276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 177804275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &177804277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3483,7 +3158,6 @@ GameObject:
   - component: {fileID: 209953470}
   - component: {fileID: 209953469}
   - component: {fileID: 209953468}
-  - component: {fileID: 209953467}
   m_Layer: 0
   m_Name: Tall Block (4)
   m_TagString: Block
@@ -3491,18 +3165,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &209953467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 209953466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &209953468
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3571,7 +3233,6 @@ GameObject:
   - component: {fileID: 214884473}
   - component: {fileID: 214884472}
   - component: {fileID: 214884471}
-  - component: {fileID: 214884470}
   m_Layer: 0
   m_Name: Sand_Block (110)
   m_TagString: Block
@@ -3593,18 +3254,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &214884470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 214884468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &214884471
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3761,7 +3410,6 @@ GameObject:
   - component: {fileID: 242351495}
   - component: {fileID: 242351494}
   - component: {fileID: 242351493}
-  - component: {fileID: 242351492}
   m_Layer: 0
   m_Name: Sand_Block (65)
   m_TagString: Block
@@ -3783,18 +3431,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &242351492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 242351490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &242351493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3863,7 +3499,6 @@ GameObject:
   - component: {fileID: 250296026}
   - component: {fileID: 250296025}
   - component: {fileID: 250296024}
-  - component: {fileID: 250296023}
   m_Layer: 0
   m_Name: Wide Block (2)
   m_TagString: Block
@@ -3871,18 +3506,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &250296023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 250296022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &250296024
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3951,7 +3574,6 @@ GameObject:
   - component: {fileID: 267923613}
   - component: {fileID: 267923612}
   - component: {fileID: 267923611}
-  - component: {fileID: 267923610}
   m_Layer: 0
   m_Name: Stone_Block (1)
   m_TagString: Block
@@ -3959,18 +3581,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &267923610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: de39bd9a46afae948912763e6486def0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 267923609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &267923611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4139,7 +3749,6 @@ GameObject:
   - component: {fileID: 298053389}
   - component: {fileID: 298053388}
   - component: {fileID: 298053387}
-  - component: {fileID: 298053386}
   m_Layer: 0
   m_Name: Sand_Block (86)
   m_TagString: Block
@@ -4161,18 +3770,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 87
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &298053386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 298053384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &298053387
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4241,7 +3838,6 @@ GameObject:
   - component: {fileID: 302779507}
   - component: {fileID: 302779506}
   - component: {fileID: 302779505}
-  - component: {fileID: 302779504}
   m_Layer: 0
   m_Name: Block (4)
   m_TagString: Block
@@ -4249,18 +3845,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &302779504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302779503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &302779505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4329,7 +3913,6 @@ GameObject:
   - component: {fileID: 305873509}
   - component: {fileID: 305873508}
   - component: {fileID: 305873507}
-  - component: {fileID: 305873506}
   m_Layer: 0
   m_Name: Sand_Block (58)
   m_TagString: Block
@@ -4351,18 +3934,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &305873506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 305873504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &305873507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4431,7 +4002,6 @@ GameObject:
   - component: {fileID: 306596915}
   - component: {fileID: 306596914}
   - component: {fileID: 306596913}
-  - component: {fileID: 306596912}
   m_Layer: 0
   m_Name: Sand_Block (122)
   m_TagString: Block
@@ -4453,18 +4023,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &306596912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 306596910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &306596913
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4533,7 +4091,6 @@ GameObject:
   - component: {fileID: 308656747}
   - component: {fileID: 308656746}
   - component: {fileID: 308656745}
-  - component: {fileID: 308656744}
   m_Layer: 0
   m_Name: Sand_Block (104)
   m_TagString: Block
@@ -4555,18 +4112,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &308656744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 308656742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &308656745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4635,7 +4180,6 @@ GameObject:
   - component: {fileID: 309372443}
   - component: {fileID: 309372442}
   - component: {fileID: 309372441}
-  - component: {fileID: 309372440}
   m_Layer: 0
   m_Name: Sand_Block (126)
   m_TagString: Block
@@ -4657,18 +4201,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &309372440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 309372438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &309372441
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4737,7 +4269,6 @@ GameObject:
   - component: {fileID: 317232608}
   - component: {fileID: 317232607}
   - component: {fileID: 317232606}
-  - component: {fileID: 317232605}
   m_Layer: 0
   m_Name: Wide Block (2)
   m_TagString: Block
@@ -4745,18 +4276,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &317232605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 317232604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &317232606
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4825,7 +4344,6 @@ GameObject:
   - component: {fileID: 318414175}
   - component: {fileID: 318414174}
   - component: {fileID: 318414173}
-  - component: {fileID: 318414172}
   m_Layer: 0
   m_Name: Sand_Block (59)
   m_TagString: Block
@@ -4847,18 +4365,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &318414172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 318414170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &318414173
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4927,7 +4433,6 @@ GameObject:
   - component: {fileID: 321615518}
   - component: {fileID: 321615517}
   - component: {fileID: 321615516}
-  - component: {fileID: 321615515}
   m_Layer: 0
   m_Name: Sand_Block (72)
   m_TagString: Block
@@ -4949,18 +4454,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &321615515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 321615513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &321615516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5029,7 +4522,6 @@ GameObject:
   - component: {fileID: 325132366}
   - component: {fileID: 325132365}
   - component: {fileID: 325132364}
-  - component: {fileID: 325132363}
   m_Layer: 0
   m_Name: Sand_Block (43)
   m_TagString: Block
@@ -5051,18 +4543,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &325132363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 325132361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &325132364
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5217,7 +4697,6 @@ GameObject:
   - component: {fileID: 327960971}
   - component: {fileID: 327960970}
   - component: {fileID: 327960969}
-  - component: {fileID: 327960968}
   m_Layer: 0
   m_Name: Sand_Block (56)
   m_TagString: Block
@@ -5239,18 +4718,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &327960968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 327960966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &327960969
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5319,7 +4786,6 @@ GameObject:
   - component: {fileID: 332976978}
   - component: {fileID: 332976977}
   - component: {fileID: 332976976}
-  - component: {fileID: 332976975}
   m_Layer: 0
   m_Name: Sand_Block (32)
   m_TagString: Block
@@ -5341,18 +4807,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &332976975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 332976973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &332976976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5435,7 +4889,6 @@ GameObject:
   - component: {fileID: 347312589}
   - component: {fileID: 347312588}
   - component: {fileID: 347312587}
-  - component: {fileID: 347312586}
   m_Layer: 0
   m_Name: Tall Block
   m_TagString: Block
@@ -5443,18 +4896,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &347312586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 347312585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &347312587
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5586,7 +5027,6 @@ GameObject:
   - component: {fileID: 368172094}
   - component: {fileID: 368172093}
   - component: {fileID: 368172092}
-  - component: {fileID: 368172091}
   m_Layer: 0
   m_Name: Sand_Block (71)
   m_TagString: Block
@@ -5608,18 +5048,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &368172091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 368172089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &368172092
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5688,7 +5116,6 @@ GameObject:
   - component: {fileID: 371273836}
   - component: {fileID: 371273835}
   - component: {fileID: 371273834}
-  - component: {fileID: 371273833}
   m_Layer: 0
   m_Name: Sand_Block (26)
   m_TagString: Block
@@ -5710,18 +5137,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &371273833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 371273831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &371273834
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5790,7 +5205,6 @@ GameObject:
   - component: {fileID: 371992434}
   - component: {fileID: 371992433}
   - component: {fileID: 371992432}
-  - component: {fileID: 371992431}
   m_Layer: 0
   m_Name: Sand_Block (13)
   m_TagString: Block
@@ -5798,18 +5212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &371992431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 371992430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &371992432
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5892,7 +5294,6 @@ GameObject:
   - component: {fileID: 386957098}
   - component: {fileID: 386957097}
   - component: {fileID: 386957096}
-  - component: {fileID: 386957095}
   m_Layer: 0
   m_Name: Tall_Block_Stone (3)
   m_TagString: Block
@@ -5900,18 +5301,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &386957095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: eb9bece0a6bc7c14fa852937519cb1a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 386957094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &386957096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5980,7 +5369,6 @@ GameObject:
   - component: {fileID: 388743812}
   - component: {fileID: 388743811}
   - component: {fileID: 388743810}
-  - component: {fileID: 388743809}
   m_Layer: 0
   m_Name: Sand_Block (80)
   m_TagString: Block
@@ -6002,18 +5390,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 81
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &388743809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 388743807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &388743810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6168,7 +5544,6 @@ GameObject:
   - component: {fileID: 407783495}
   - component: {fileID: 407783494}
   - component: {fileID: 407783493}
-  - component: {fileID: 407783492}
   m_Layer: 0
   m_Name: Sand_Block (57)
   m_TagString: Block
@@ -6190,18 +5565,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &407783492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 407783490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &407783493
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6270,7 +5633,6 @@ GameObject:
   - component: {fileID: 413837636}
   - component: {fileID: 413837635}
   - component: {fileID: 413837634}
-  - component: {fileID: 413837633}
   m_Layer: 0
   m_Name: Sand_Block (28)
   m_TagString: Block
@@ -6292,18 +5654,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &413837633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 413837631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &413837634
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6372,7 +5722,6 @@ GameObject:
   - component: {fileID: 419549783}
   - component: {fileID: 419549782}
   - component: {fileID: 419549781}
-  - component: {fileID: 419549780}
   m_Layer: 0
   m_Name: Sand_Block (98)
   m_TagString: Block
@@ -6394,18 +5743,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &419549780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 419549778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &419549781
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6508,7 +5845,6 @@ GameObject:
   - component: {fileID: 435490692}
   - component: {fileID: 435490691}
   - component: {fileID: 435490690}
-  - component: {fileID: 435490689}
   m_Layer: 0
   m_Name: Sand_Block (47)
   m_TagString: Block
@@ -6530,18 +5866,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &435490689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435490687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &435490690
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6610,7 +5934,6 @@ GameObject:
   - component: {fileID: 435985534}
   - component: {fileID: 435985533}
   - component: {fileID: 435985532}
-  - component: {fileID: 435985531}
   m_Layer: 0
   m_Name: Sand_Block (19)
   m_TagString: Block
@@ -6632,18 +5955,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &435985531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 435985529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &435985532
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6753,7 +6064,6 @@ GameObject:
   - component: {fileID: 446732666}
   - component: {fileID: 446732665}
   - component: {fileID: 446732664}
-  - component: {fileID: 446732663}
   m_Layer: 0
   m_Name: Stone_Block (1)
   m_TagString: Block
@@ -6761,18 +6071,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &446732663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: de39bd9a46afae948912763e6486def0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 446732662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &446732664
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6841,7 +6139,6 @@ GameObject:
   - component: {fileID: 451570240}
   - component: {fileID: 451570239}
   - component: {fileID: 451570238}
-  - component: {fileID: 451570237}
   m_Layer: 0
   m_Name: Sand_Block (22)
   m_TagString: Block
@@ -6863,18 +6160,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &451570237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 451570235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &451570238
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6943,7 +6228,6 @@ GameObject:
   - component: {fileID: 457351897}
   - component: {fileID: 457351896}
   - component: {fileID: 457351895}
-  - component: {fileID: 457351894}
   m_Layer: 0
   m_Name: Tall_Block_Metal (5)
   m_TagString: Block
@@ -6951,18 +6235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &457351894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 457351893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &457351895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7140,7 +6412,6 @@ GameObject:
   - component: {fileID: 459867075}
   - component: {fileID: 459867074}
   - component: {fileID: 459867073}
-  - component: {fileID: 459867072}
   m_Layer: 0
   m_Name: Stone_Block
   m_TagString: Block
@@ -7148,18 +6419,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &459867072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: de39bd9a46afae948912763e6486def0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 459867071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &459867073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7228,7 +6487,6 @@ GameObject:
   - component: {fileID: 465963135}
   - component: {fileID: 465963134}
   - component: {fileID: 465963133}
-  - component: {fileID: 465963132}
   m_Layer: 0
   m_Name: Tall Block (2)
   m_TagString: Block
@@ -7236,18 +6494,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &465963132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 465963131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &465963133
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7316,7 +6562,6 @@ GameObject:
   - component: {fileID: 473499192}
   - component: {fileID: 473499191}
   - component: {fileID: 473499190}
-  - component: {fileID: 473499189}
   m_Layer: 0
   m_Name: Sand_Block (41)
   m_TagString: Block
@@ -7338,18 +6583,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &473499189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 473499187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &473499190
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7432,7 +6665,6 @@ GameObject:
   - component: {fileID: 489021949}
   - component: {fileID: 489021948}
   - component: {fileID: 489021947}
-  - component: {fileID: 489021946}
   m_Layer: 0
   m_Name: Block (2)
   m_TagString: Block
@@ -7440,18 +6672,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &489021946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 489021945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &489021947
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7520,7 +6740,6 @@ GameObject:
   - component: {fileID: 490366574}
   - component: {fileID: 490366573}
   - component: {fileID: 490366572}
-  - component: {fileID: 490366571}
   m_Layer: 0
   m_Name: Sand_Block (54)
   m_TagString: Block
@@ -7542,18 +6761,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &490366571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 490366569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &490366572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7676,7 +6883,6 @@ GameObject:
   - component: {fileID: 514599133}
   - component: {fileID: 514599132}
   - component: {fileID: 514599131}
-  - component: {fileID: 514599130}
   m_Layer: 0
   m_Name: Sand_Block (85)
   m_TagString: Block
@@ -7698,18 +6904,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &514599130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 514599128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &514599131
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7778,7 +6972,6 @@ GameObject:
   - component: {fileID: 530173766}
   - component: {fileID: 530173765}
   - component: {fileID: 530173764}
-  - component: {fileID: 530173763}
   m_Layer: 0
   m_Name: Sand_Block (118)
   m_TagString: Block
@@ -7800,18 +6993,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 119
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &530173763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 530173761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &530173764
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7894,7 +7075,6 @@ GameObject:
   - component: {fileID: 538676341}
   - component: {fileID: 538676340}
   - component: {fileID: 538676339}
-  - component: {fileID: 538676338}
   m_Layer: 0
   m_Name: Sand_Block (68)
   m_TagString: Block
@@ -7916,18 +7096,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 69
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &538676338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 538676336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &538676339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7996,7 +7164,6 @@ GameObject:
   - component: {fileID: 541124341}
   - component: {fileID: 541124340}
   - component: {fileID: 541124339}
-  - component: {fileID: 541124338}
   m_Layer: 0
   m_Name: Tall_Block_Metal (1)
   m_TagString: Block
@@ -8004,18 +7171,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &541124338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 541124337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &541124339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8126,7 +7281,6 @@ GameObject:
   - component: {fileID: 571992314}
   - component: {fileID: 571992313}
   - component: {fileID: 571992312}
-  - component: {fileID: 571992311}
   m_Layer: 0
   m_Name: Sand_Block (20)
   m_TagString: Block
@@ -8148,18 +7302,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &571992311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571992309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &571992312
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8228,7 +7370,6 @@ GameObject:
   - component: {fileID: 576696417}
   - component: {fileID: 576696416}
   - component: {fileID: 576696415}
-  - component: {fileID: 576696414}
   m_Layer: 0
   m_Name: Sand_Block (4)
   m_TagString: Block
@@ -8236,18 +7377,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &576696414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 576696413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &576696415
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8316,7 +7445,6 @@ GameObject:
   - component: {fileID: 584998303}
   - component: {fileID: 584998302}
   - component: {fileID: 584998301}
-  - component: {fileID: 584998300}
   m_Layer: 0
   m_Name: Sand_Block (44)
   m_TagString: Block
@@ -8338,18 +7466,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &584998300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 584998298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &584998301
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8432,7 +7548,6 @@ GameObject:
   - component: {fileID: 603027926}
   - component: {fileID: 603027925}
   - component: {fileID: 603027924}
-  - component: {fileID: 603027923}
   m_Layer: 0
   m_Name: Sand_Block (91)
   m_TagString: Block
@@ -8454,18 +7569,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &603027923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 603027921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &603027924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8534,7 +7637,6 @@ GameObject:
   - component: {fileID: 605416347}
   - component: {fileID: 605416346}
   - component: {fileID: 605416345}
-  - component: {fileID: 605416344}
   m_Layer: 0
   m_Name: Sand_Block (60)
   m_TagString: Block
@@ -8556,18 +7658,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &605416344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 605416342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &605416345
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8719,7 +7809,6 @@ GameObject:
   - component: {fileID: 611948429}
   - component: {fileID: 611948428}
   - component: {fileID: 611948427}
-  - component: {fileID: 611948426}
   m_Layer: 0
   m_Name: Sand_Block (42)
   m_TagString: Block
@@ -8741,18 +7830,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &611948426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 611948424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &611948427
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8835,7 +7912,6 @@ GameObject:
   - component: {fileID: 626002365}
   - component: {fileID: 626002364}
   - component: {fileID: 626002363}
-  - component: {fileID: 626002362}
   m_Layer: 0
   m_Name: Wide_Block_Stone (2)
   m_TagString: Block
@@ -8843,18 +7919,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &626002362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 626002361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &626002363
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9023,7 +8087,6 @@ GameObject:
   - component: {fileID: 642201098}
   - component: {fileID: 642201097}
   - component: {fileID: 642201096}
-  - component: {fileID: 642201095}
   m_Layer: 0
   m_Name: Wide_Block_Stone (2)
   m_TagString: Block
@@ -9031,18 +8094,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &642201095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 642201094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &642201096
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9167,7 +8218,6 @@ GameObject:
   - component: {fileID: 684122522}
   - component: {fileID: 684122521}
   - component: {fileID: 684122520}
-  - component: {fileID: 684122519}
   m_Layer: 0
   m_Name: Sand_Block (111)
   m_TagString: Block
@@ -9189,18 +8239,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &684122519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 684122517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &684122520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9269,7 +8307,6 @@ GameObject:
   - component: {fileID: 689899075}
   - component: {fileID: 689899074}
   - component: {fileID: 689899073}
-  - component: {fileID: 689899072}
   m_Layer: 0
   m_Name: Sand_Block (30)
   m_TagString: Block
@@ -9291,18 +8328,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &689899072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 689899070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &689899073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9371,7 +8396,6 @@ GameObject:
   - component: {fileID: 694628401}
   - component: {fileID: 694628400}
   - component: {fileID: 694628399}
-  - component: {fileID: 694628398}
   m_Layer: 0
   m_Name: Sand_Block (16)
   m_TagString: Block
@@ -9393,18 +8417,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &694628398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 694628396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &694628399
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9530,7 +8542,6 @@ GameObject:
   - component: {fileID: 730481616}
   - component: {fileID: 730481615}
   - component: {fileID: 730481614}
-  - component: {fileID: 730481613}
   m_Layer: 0
   m_Name: Wide_Block_Stone (1)
   m_TagString: Block
@@ -9538,18 +8549,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &730481613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730481612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &730481614
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9618,7 +8617,6 @@ GameObject:
   - component: {fileID: 731316201}
   - component: {fileID: 731316200}
   - component: {fileID: 731316199}
-  - component: {fileID: 731316198}
   m_Layer: 0
   m_Name: Wide Block (1)
   m_TagString: Block
@@ -9626,18 +8624,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &731316198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 731316197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &731316199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9706,7 +8692,6 @@ GameObject:
   - component: {fileID: 743222120}
   - component: {fileID: 743222119}
   - component: {fileID: 743222118}
-  - component: {fileID: 743222117}
   m_Layer: 0
   m_Name: Block
   m_TagString: Block
@@ -9714,18 +8699,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &743222117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 743222116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &743222118
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9882,7 +8855,6 @@ GameObject:
   - component: {fileID: 767555334}
   - component: {fileID: 767555333}
   - component: {fileID: 767555332}
-  - component: {fileID: 767555331}
   m_Layer: 0
   m_Name: Sand_Block (77)
   m_TagString: Block
@@ -9904,18 +8876,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &767555331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 767555329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &767555332
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9984,7 +8944,6 @@ GameObject:
   - component: {fileID: 768779614}
   - component: {fileID: 768779613}
   - component: {fileID: 768779612}
-  - component: {fileID: 768779611}
   m_Layer: 0
   m_Name: Sand_Block (45)
   m_TagString: Block
@@ -10006,18 +8965,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768779611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 768779609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &768779612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10100,7 +9047,6 @@ GameObject:
   - component: {fileID: 774574002}
   - component: {fileID: 774574001}
   - component: {fileID: 774574000}
-  - component: {fileID: 774573999}
   m_Layer: 0
   m_Name: Sand_Block (125)
   m_TagString: Block
@@ -10122,18 +9068,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774573999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 774573997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &774574000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10202,7 +9136,6 @@ GameObject:
   - component: {fileID: 775494388}
   - component: {fileID: 775494387}
   - component: {fileID: 775494386}
-  - component: {fileID: 775494385}
   m_Layer: 0
   m_Name: Tall_Block_Stone
   m_TagString: Block
@@ -10210,18 +9143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &775494385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: eb9bece0a6bc7c14fa852937519cb1a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 775494384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &775494386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10330,7 +9251,6 @@ GameObject:
   - component: {fileID: 800976730}
   - component: {fileID: 800976729}
   - component: {fileID: 800976728}
-  - component: {fileID: 800976727}
   m_Layer: 0
   m_Name: Wide Block (3)
   m_TagString: Block
@@ -10338,18 +9258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &800976727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 800976726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &800976728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10575,7 +9483,6 @@ GameObject:
   - component: {fileID: 825738892}
   - component: {fileID: 825738891}
   - component: {fileID: 825738890}
-  - component: {fileID: 825738889}
   m_Layer: 0
   m_Name: Sand_Block (48)
   m_TagString: Block
@@ -10597,18 +9504,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &825738889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 825738887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &825738890
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10691,7 +9586,6 @@ GameObject:
   - component: {fileID: 830503945}
   - component: {fileID: 830503944}
   - component: {fileID: 830503943}
-  - component: {fileID: 830503942}
   m_Layer: 0
   m_Name: Sand_Block (10)
   m_TagString: Block
@@ -10699,18 +9593,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &830503942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 830503941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &830503943
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10779,7 +9661,6 @@ GameObject:
   - component: {fileID: 831902455}
   - component: {fileID: 831902454}
   - component: {fileID: 831902453}
-  - component: {fileID: 831902452}
   m_Layer: 0
   m_Name: Sand_Block (78)
   m_TagString: Block
@@ -10801,18 +9682,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 79
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &831902452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 831902450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &831902453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10881,7 +9750,6 @@ GameObject:
   - component: {fileID: 835155719}
   - component: {fileID: 835155718}
   - component: {fileID: 835155717}
-  - component: {fileID: 835155716}
   m_Layer: 0
   m_Name: Sand_Block (61)
   m_TagString: Block
@@ -10903,18 +9771,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &835155716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 835155714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &835155717
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10983,7 +9839,6 @@ GameObject:
   - component: {fileID: 836560728}
   - component: {fileID: 836560727}
   - component: {fileID: 836560726}
-  - component: {fileID: 836560725}
   m_Layer: 0
   m_Name: Sand_Block (124)
   m_TagString: Block
@@ -11005,18 +9860,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &836560725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 836560723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &836560726
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11099,7 +9942,6 @@ GameObject:
   - component: {fileID: 844560929}
   - component: {fileID: 844560928}
   - component: {fileID: 844560927}
-  - component: {fileID: 844560926}
   m_Layer: 0
   m_Name: Sand_Block (120)
   m_TagString: Block
@@ -11121,18 +9963,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &844560926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 844560924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &844560927
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11201,7 +10031,6 @@ GameObject:
   - component: {fileID: 853955838}
   - component: {fileID: 853955837}
   - component: {fileID: 853955836}
-  - component: {fileID: 853955835}
   m_Layer: 0
   m_Name: Sand_Block (62)
   m_TagString: Block
@@ -11223,18 +10052,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &853955835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 853955833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &853955836
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11303,7 +10120,6 @@ GameObject:
   - component: {fileID: 857856664}
   - component: {fileID: 857856663}
   - component: {fileID: 857856662}
-  - component: {fileID: 857856661}
   m_Layer: 0
   m_Name: Sand_Block (92)
   m_TagString: Block
@@ -11325,18 +10141,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &857856661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 857856659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &857856662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11405,7 +10209,6 @@ GameObject:
   - component: {fileID: 875181601}
   - component: {fileID: 875181600}
   - component: {fileID: 875181599}
-  - component: {fileID: 875181598}
   m_Layer: 0
   m_Name: Sand_Block (17)
   m_TagString: Block
@@ -11427,18 +10230,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &875181598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 875181596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &875181599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11549,7 +10340,6 @@ GameObject:
   - component: {fileID: 879882723}
   - component: {fileID: 879882722}
   - component: {fileID: 879882721}
-  - component: {fileID: 879882720}
   m_Layer: 0
   m_Name: Tall Block (5)
   m_TagString: Block
@@ -11557,18 +10347,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &879882720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 879882719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &879882721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11637,7 +10415,6 @@ GameObject:
   - component: {fileID: 893110882}
   - component: {fileID: 893110881}
   - component: {fileID: 893110880}
-  - component: {fileID: 893110879}
   m_Layer: 0
   m_Name: Sand_Block (24)
   m_TagString: Block
@@ -11659,18 +10436,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &893110879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 893110877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &893110880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11739,7 +10504,6 @@ GameObject:
   - component: {fileID: 922509951}
   - component: {fileID: 922509950}
   - component: {fileID: 922509949}
-  - component: {fileID: 922509948}
   m_Layer: 0
   m_Name: Block (1)
   m_TagString: Block
@@ -11747,18 +10511,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &922509948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 922509947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &922509949
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11827,7 +10579,6 @@ GameObject:
   - component: {fileID: 937029434}
   - component: {fileID: 937029433}
   - component: {fileID: 937029432}
-  - component: {fileID: 937029431}
   m_Layer: 0
   m_Name: Sand_Block (113)
   m_TagString: Block
@@ -11849,18 +10600,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 114
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &937029431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937029429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &937029432
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11929,7 +10668,6 @@ GameObject:
   - component: {fileID: 946707882}
   - component: {fileID: 946707881}
   - component: {fileID: 946707880}
-  - component: {fileID: 946707879}
   m_Layer: 0
   m_Name: Sand_Block (35)
   m_TagString: Block
@@ -11951,18 +10689,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &946707879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 946707877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &946707880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12031,7 +10757,6 @@ GameObject:
   - component: {fileID: 955051256}
   - component: {fileID: 955051255}
   - component: {fileID: 955051254}
-  - component: {fileID: 955051253}
   m_Layer: 0
   m_Name: Wide_Block_Stone
   m_TagString: Block
@@ -12039,18 +10764,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &955051253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 955051252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &955051254
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12119,7 +10832,6 @@ GameObject:
   - component: {fileID: 962000447}
   - component: {fileID: 962000446}
   - component: {fileID: 962000445}
-  - component: {fileID: 962000444}
   m_Layer: 0
   m_Name: Wide_Block_Stone (3)
   m_TagString: Block
@@ -12127,18 +10839,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &962000444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 962000443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &962000445
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12307,7 +11007,6 @@ GameObject:
   - component: {fileID: 977582434}
   - component: {fileID: 977582433}
   - component: {fileID: 977582432}
-  - component: {fileID: 977582431}
   m_Layer: 0
   m_Name: Stone_Sphere
   m_TagString: Block
@@ -12315,18 +11014,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &977582431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114715558333919640, guid: c4da4acb3bfcefe47ad8cddc9407d4dc,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 977582430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &977582432
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12481,7 +11168,6 @@ GameObject:
   - component: {fileID: 987556185}
   - component: {fileID: 987556184}
   - component: {fileID: 987556183}
-  - component: {fileID: 987556182}
   m_Layer: 0
   m_Name: Sand_Block (101)
   m_TagString: Block
@@ -12503,18 +11189,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &987556182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 987556180}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &987556183
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12583,7 +11257,6 @@ GameObject:
   - component: {fileID: 990940259}
   - component: {fileID: 990940258}
   - component: {fileID: 990940257}
-  - component: {fileID: 990940256}
   m_Layer: 0
   m_Name: Sand_Block (67)
   m_TagString: Block
@@ -12605,18 +11278,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &990940256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 990940254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &990940257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12685,7 +11346,6 @@ GameObject:
   - component: {fileID: 993464870}
   - component: {fileID: 993464869}
   - component: {fileID: 993464868}
-  - component: {fileID: 993464867}
   m_Layer: 0
   m_Name: Metal_Block (1)
   m_TagString: Block
@@ -12693,18 +11353,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &993464867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d68933189e133f64e820e2599eba0f10,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 993464866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &993464868
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12773,7 +11421,6 @@ GameObject:
   - component: {fileID: 995450032}
   - component: {fileID: 995450031}
   - component: {fileID: 995450030}
-  - component: {fileID: 995450029}
   m_Layer: 0
   m_Name: Sand_Block (106)
   m_TagString: Block
@@ -12795,18 +11442,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 107
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &995450029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 995450027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &995450030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12889,7 +11524,6 @@ GameObject:
   - component: {fileID: 1003023308}
   - component: {fileID: 1003023307}
   - component: {fileID: 1003023306}
-  - component: {fileID: 1003023305}
   m_Layer: 0
   m_Name: Tall Block (1)
   m_TagString: Block
@@ -12897,18 +11531,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1003023305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1003023304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1003023306
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12977,7 +11599,6 @@ GameObject:
   - component: {fileID: 1039791550}
   - component: {fileID: 1039791549}
   - component: {fileID: 1039791548}
-  - component: {fileID: 1039791547}
   m_Layer: 0
   m_Name: Sand_Block (11)
   m_TagString: Block
@@ -12985,18 +11606,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1039791547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1039791546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1039791548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13228,7 +11837,6 @@ GameObject:
   - component: {fileID: 1049604247}
   - component: {fileID: 1049604246}
   - component: {fileID: 1049604245}
-  - component: {fileID: 1049604244}
   m_Layer: 0
   m_Name: Sand_Block (38)
   m_TagString: Block
@@ -13250,18 +11858,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1049604244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1049604242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1049604245
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13344,7 +11940,6 @@ GameObject:
   - component: {fileID: 1054207695}
   - component: {fileID: 1054207694}
   - component: {fileID: 1054207693}
-  - component: {fileID: 1054207692}
   m_Layer: 0
   m_Name: Sand_Block (1)
   m_TagString: Block
@@ -13352,18 +11947,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1054207692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1054207691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1054207693
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13432,7 +12015,6 @@ GameObject:
   - component: {fileID: 1058984885}
   - component: {fileID: 1058984884}
   - component: {fileID: 1058984883}
-  - component: {fileID: 1058984882}
   m_Layer: 0
   m_Name: Sand_Block (119)
   m_TagString: Block
@@ -13454,18 +12036,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1058984882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1058984880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1058984883
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13548,7 +12118,6 @@ GameObject:
   - component: {fileID: 1068586780}
   - component: {fileID: 1068586779}
   - component: {fileID: 1068586778}
-  - component: {fileID: 1068586777}
   m_Layer: 0
   m_Name: Tall_Block_Stone (2)
   m_TagString: Block
@@ -13556,18 +12125,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1068586777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: eb9bece0a6bc7c14fa852937519cb1a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1068586776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1068586778
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13650,7 +12207,6 @@ GameObject:
   - component: {fileID: 1080285592}
   - component: {fileID: 1080285591}
   - component: {fileID: 1080285590}
-  - component: {fileID: 1080285589}
   m_Layer: 0
   m_Name: Sand_Block (107)
   m_TagString: Block
@@ -13672,18 +12228,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1080285589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1080285587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1080285590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13752,7 +12296,6 @@ GameObject:
   - component: {fileID: 1108621948}
   - component: {fileID: 1108621947}
   - component: {fileID: 1108621946}
-  - component: {fileID: 1108621945}
   m_Layer: 0
   m_Name: Wide_Block_Metal (1)
   m_TagString: Block
@@ -13760,18 +12303,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1108621945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 05edff6368dbbca43a222731f26a1deb,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1108621944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1108621946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13840,7 +12371,6 @@ GameObject:
   - component: {fileID: 1120404855}
   - component: {fileID: 1120404854}
   - component: {fileID: 1120404853}
-  - component: {fileID: 1120404852}
   m_Layer: 0
   m_Name: Sand_Block (3)
   m_TagString: Block
@@ -13848,18 +12378,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1120404852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1120404851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1120404853
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13942,7 +12460,6 @@ GameObject:
   - component: {fileID: 1129148742}
   - component: {fileID: 1129148741}
   - component: {fileID: 1129148740}
-  - component: {fileID: 1129148739}
   m_Layer: 0
   m_Name: Wide_Block_Stone
   m_TagString: Block
@@ -13950,18 +12467,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1129148739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1129148738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1129148740
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14030,7 +12535,6 @@ GameObject:
   - component: {fileID: 1138989348}
   - component: {fileID: 1138989347}
   - component: {fileID: 1138989346}
-  - component: {fileID: 1138989345}
   m_Layer: 0
   m_Name: Sand_Block (31)
   m_TagString: Block
@@ -14052,18 +12556,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1138989345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1138989343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1138989346
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14146,7 +12638,6 @@ GameObject:
   - component: {fileID: 1145704052}
   - component: {fileID: 1145704051}
   - component: {fileID: 1145704050}
-  - component: {fileID: 1145704049}
   m_Layer: 0
   m_Name: Sand_Block (97)
   m_TagString: Block
@@ -14168,18 +12659,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1145704049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1145704047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1145704050
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14334,7 +12813,6 @@ GameObject:
   - component: {fileID: 1146156070}
   - component: {fileID: 1146156069}
   - component: {fileID: 1146156068}
-  - component: {fileID: 1146156067}
   m_Layer: 0
   m_Name: Sand_Block (6)
   m_TagString: Block
@@ -14342,18 +12820,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1146156067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1146156066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1146156068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14422,7 +12888,6 @@ GameObject:
   - component: {fileID: 1149465007}
   - component: {fileID: 1149465006}
   - component: {fileID: 1149465005}
-  - component: {fileID: 1149465004}
   m_Layer: 0
   m_Name: Sand_Block (93)
   m_TagString: Block
@@ -14444,18 +12909,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1149465004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1149465002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1149465005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14745,7 +13198,6 @@ GameObject:
   - component: {fileID: 1164849899}
   - component: {fileID: 1164849898}
   - component: {fileID: 1164849897}
-  - component: {fileID: 1164849896}
   m_Layer: 0
   m_Name: Sand_Block (127)
   m_TagString: Block
@@ -14767,18 +13219,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1164849896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1164849894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1164849897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14861,7 +13301,6 @@ GameObject:
   - component: {fileID: 1178477116}
   - component: {fileID: 1178477115}
   - component: {fileID: 1178477114}
-  - component: {fileID: 1178477113}
   m_Layer: 0
   m_Name: Sand_Block (46)
   m_TagString: Block
@@ -14883,18 +13322,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1178477113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1178477111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1178477114
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14977,7 +13404,6 @@ GameObject:
   - component: {fileID: 1180707344}
   - component: {fileID: 1180707343}
   - component: {fileID: 1180707342}
-  - component: {fileID: 1180707341}
   m_Layer: 0
   m_Name: Sand_Block (9)
   m_TagString: Block
@@ -14985,18 +13411,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1180707341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1180707340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1180707342
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15065,7 +13479,6 @@ GameObject:
   - component: {fileID: 1183836414}
   - component: {fileID: 1183836413}
   - component: {fileID: 1183836412}
-  - component: {fileID: 1183836411}
   m_Layer: 0
   m_Name: Block (3)
   m_TagString: Block
@@ -15073,18 +13486,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1183836411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1183836410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1183836412
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15153,7 +13554,6 @@ GameObject:
   - component: {fileID: 1187453119}
   - component: {fileID: 1187453118}
   - component: {fileID: 1187453117}
-  - component: {fileID: 1187453116}
   m_Layer: 0
   m_Name: Metal_Block
   m_TagString: Block
@@ -15161,18 +13561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1187453116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d68933189e133f64e820e2599eba0f10,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1187453115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1187453117
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15241,7 +13629,6 @@ GameObject:
   - component: {fileID: 1202384216}
   - component: {fileID: 1202384215}
   - component: {fileID: 1202384214}
-  - component: {fileID: 1202384213}
   m_Layer: 0
   m_Name: Sand_Block (95)
   m_TagString: Block
@@ -15263,18 +13650,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1202384213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1202384211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1202384214
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15343,7 +13718,6 @@ GameObject:
   - component: {fileID: 1205792857}
   - component: {fileID: 1205792856}
   - component: {fileID: 1205792855}
-  - component: {fileID: 1205792854}
   m_Layer: 0
   m_Name: Sand_Block (27)
   m_TagString: Block
@@ -15365,18 +13739,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1205792854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1205792852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1205792855
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15445,7 +13807,6 @@ GameObject:
   - component: {fileID: 1213548566}
   - component: {fileID: 1213548565}
   - component: {fileID: 1213548564}
-  - component: {fileID: 1213548563}
   m_Layer: 0
   m_Name: Sand_Block (117)
   m_TagString: Block
@@ -15467,18 +13828,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 118
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1213548563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1213548561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1213548564
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15547,7 +13896,6 @@ GameObject:
   - component: {fileID: 1221931786}
   - component: {fileID: 1221931785}
   - component: {fileID: 1221931784}
-  - component: {fileID: 1221931783}
   m_Layer: 0
   m_Name: Sand_Block (87)
   m_TagString: Block
@@ -15569,18 +13917,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1221931783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1221931781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1221931784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15663,7 +13999,6 @@ GameObject:
   - component: {fileID: 1234545341}
   - component: {fileID: 1234545340}
   - component: {fileID: 1234545339}
-  - component: {fileID: 1234545338}
   m_Layer: 0
   m_Name: Sand_Block (21)
   m_TagString: Block
@@ -15685,18 +14020,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1234545338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1234545336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1234545339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15765,7 +14088,6 @@ GameObject:
   - component: {fileID: 1252557088}
   - component: {fileID: 1252557087}
   - component: {fileID: 1252557086}
-  - component: {fileID: 1252557085}
   m_Layer: 0
   m_Name: Tall Block (2)
   m_TagString: Block
@@ -15773,18 +14095,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1252557085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1252557084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1252557086
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15909,7 +14219,6 @@ GameObject:
   - component: {fileID: 1274939169}
   - component: {fileID: 1274939168}
   - component: {fileID: 1274939167}
-  - component: {fileID: 1274939166}
   m_Layer: 0
   m_Name: Wide Block (4)
   m_TagString: Block
@@ -15917,18 +14226,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1274939166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1274939165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1274939167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15997,7 +14294,6 @@ GameObject:
   - component: {fileID: 1276961531}
   - component: {fileID: 1276961530}
   - component: {fileID: 1276961529}
-  - component: {fileID: 1276961528}
   m_Layer: 0
   m_Name: Sand_Block (112)
   m_TagString: Block
@@ -16019,18 +14315,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1276961528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1276961526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1276961529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16113,7 +14397,6 @@ GameObject:
   - component: {fileID: 1281822066}
   - component: {fileID: 1281822065}
   - component: {fileID: 1281822064}
-  - component: {fileID: 1281822063}
   m_Layer: 0
   m_Name: Stone_Block
   m_TagString: Block
@@ -16121,18 +14404,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1281822063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: de39bd9a46afae948912763e6486def0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1281822062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1281822064
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16266,7 +14537,6 @@ GameObject:
   - component: {fileID: 1284790013}
   - component: {fileID: 1284790012}
   - component: {fileID: 1284790011}
-  - component: {fileID: 1284790010}
   m_Layer: 0
   m_Name: Sand_Block (103)
   m_TagString: Block
@@ -16288,18 +14558,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1284790010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284790008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1284790011
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16368,7 +14626,6 @@ GameObject:
   - component: {fileID: 1289464488}
   - component: {fileID: 1289464487}
   - component: {fileID: 1289464486}
-  - component: {fileID: 1289464485}
   m_Layer: 0
   m_Name: Sand_Block (40)
   m_TagString: Block
@@ -16390,18 +14647,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1289464485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1289464483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1289464486
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16470,7 +14715,6 @@ GameObject:
   - component: {fileID: 1297534242}
   - component: {fileID: 1297534241}
   - component: {fileID: 1297534240}
-  - component: {fileID: 1297534239}
   m_Layer: 0
   m_Name: Sand_Block (116)
   m_TagString: Block
@@ -16492,18 +14736,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1297534239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1297534237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1297534240
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16572,7 +14804,6 @@ GameObject:
   - component: {fileID: 1303997606}
   - component: {fileID: 1303997605}
   - component: {fileID: 1303997604}
-  - component: {fileID: 1303997603}
   m_Layer: 0
   m_Name: Sand_Block (75)
   m_TagString: Block
@@ -16594,18 +14825,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1303997603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1303997601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1303997604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16674,7 +14893,6 @@ GameObject:
   - component: {fileID: 1304578785}
   - component: {fileID: 1304578784}
   - component: {fileID: 1304578783}
-  - component: {fileID: 1304578782}
   m_Layer: 0
   m_Name: Sand_Block (50)
   m_TagString: Block
@@ -16696,18 +14914,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1304578782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1304578780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1304578783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16804,7 +15010,6 @@ GameObject:
   - component: {fileID: 1343133396}
   - component: {fileID: 1343133395}
   - component: {fileID: 1343133394}
-  - component: {fileID: 1343133393}
   m_Layer: 0
   m_Name: Sand_Block (18)
   m_TagString: Block
@@ -16826,18 +15031,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1343133393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1343133391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1343133394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16968,7 +15161,6 @@ GameObject:
   - component: {fileID: 1345205435}
   - component: {fileID: 1345205434}
   - component: {fileID: 1345205433}
-  - component: {fileID: 1345205432}
   m_Layer: 0
   m_Name: Sand_Block (94)
   m_TagString: Block
@@ -16990,18 +15182,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1345205432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1345205430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1345205433
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17142,7 +15322,6 @@ GameObject:
   - component: {fileID: 1366364286}
   - component: {fileID: 1366364285}
   - component: {fileID: 1366364284}
-  - component: {fileID: 1366364283}
   m_Layer: 0
   m_Name: Tall Block
   m_TagString: Block
@@ -17150,18 +15329,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1366364283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1366364282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1366364284
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17455,7 +15622,6 @@ GameObject:
   - component: {fileID: 1386493355}
   - component: {fileID: 1386493354}
   - component: {fileID: 1386493353}
-  - component: {fileID: 1386493352}
   m_Layer: 0
   m_Name: Sand_Block (74)
   m_TagString: Block
@@ -17477,18 +15643,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1386493352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1386493350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1386493353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17599,7 +15753,6 @@ GameObject:
   - component: {fileID: 1421177796}
   - component: {fileID: 1421177795}
   - component: {fileID: 1421177794}
-  - component: {fileID: 1421177793}
   m_Layer: 0
   m_Name: Wide Block (6)
   m_TagString: Block
@@ -17621,18 +15774,6 @@ Transform:
   m_Father: {fileID: 439509743}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1421177793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1421177791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1421177794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17715,7 +15856,6 @@ GameObject:
   - component: {fileID: 1431967461}
   - component: {fileID: 1431967460}
   - component: {fileID: 1431967459}
-  - component: {fileID: 1431967458}
   m_Layer: 0
   m_Name: Sand_Block (55)
   m_TagString: Block
@@ -17737,18 +15877,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1431967458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1431967456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1431967459
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17817,7 +15945,6 @@ GameObject:
   - component: {fileID: 1437474902}
   - component: {fileID: 1437474901}
   - component: {fileID: 1437474900}
-  - component: {fileID: 1437474899}
   m_Layer: 0
   m_Name: Sand_Block (114)
   m_TagString: Block
@@ -17839,18 +15966,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1437474899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1437474897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1437474900
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17933,7 +16048,6 @@ GameObject:
   - component: {fileID: 1451174897}
   - component: {fileID: 1451174896}
   - component: {fileID: 1451174895}
-  - component: {fileID: 1451174894}
   m_Layer: 0
   m_Name: Tall Block (1)
   m_TagString: Block
@@ -17941,18 +16055,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1451174894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1451174893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1451174895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18021,7 +16123,6 @@ GameObject:
   - component: {fileID: 1453500446}
   - component: {fileID: 1453500445}
   - component: {fileID: 1453500444}
-  - component: {fileID: 1453500443}
   m_Layer: 0
   m_Name: Sand_Block (39)
   m_TagString: Block
@@ -18043,18 +16144,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1453500443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1453500441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1453500444
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18137,7 +16226,6 @@ GameObject:
   - component: {fileID: 1469678860}
   - component: {fileID: 1469678859}
   - component: {fileID: 1469678858}
-  - component: {fileID: 1469678857}
   m_Layer: 0
   m_Name: Wide Block
   m_TagString: Block
@@ -18145,18 +16233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1469678857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1469678856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1469678858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18225,7 +16301,6 @@ GameObject:
   - component: {fileID: 1477013402}
   - component: {fileID: 1477013401}
   - component: {fileID: 1477013400}
-  - component: {fileID: 1477013399}
   m_Layer: 0
   m_Name: Tall_Block_Metal (4)
   m_TagString: Block
@@ -18233,18 +16308,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1477013399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1477013398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1477013400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18327,7 +16390,6 @@ GameObject:
   - component: {fileID: 1504531738}
   - component: {fileID: 1504531737}
   - component: {fileID: 1504531736}
-  - component: {fileID: 1504531735}
   m_Layer: 0
   m_Name: Tall_Block_Metal
   m_TagString: Block
@@ -18335,18 +16397,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1504531735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504531734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1504531736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18415,7 +16465,6 @@ GameObject:
   - component: {fileID: 1535512630}
   - component: {fileID: 1535512629}
   - component: {fileID: 1535512628}
-  - component: {fileID: 1535512627}
   m_Layer: 0
   m_Name: Sand_Block (49)
   m_TagString: Block
@@ -18437,18 +16486,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1535512627
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1535512625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1535512628
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18517,7 +16554,6 @@ GameObject:
   - component: {fileID: 1538048187}
   - component: {fileID: 1538048186}
   - component: {fileID: 1538048185}
-  - component: {fileID: 1538048184}
   m_Layer: 0
   m_Name: Tall_Block_Metal (3)
   m_TagString: Block
@@ -18525,18 +16561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1538048184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: d3d7cb62d3afd4940aa82f7c67361dcf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1538048183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1538048185
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18830,7 +16854,6 @@ GameObject:
   - component: {fileID: 1539336650}
   - component: {fileID: 1539336649}
   - component: {fileID: 1539336648}
-  - component: {fileID: 1539336647}
   m_Layer: 0
   m_Name: Tall Block (1)
   m_TagString: Block
@@ -18838,18 +16861,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1539336647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1539336646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1539336648
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19143,7 +17154,6 @@ GameObject:
   - component: {fileID: 1563814858}
   - component: {fileID: 1563814857}
   - component: {fileID: 1563814856}
-  - component: {fileID: 1563814855}
   m_Layer: 0
   m_Name: Sand_Block (102)
   m_TagString: Block
@@ -19165,18 +17175,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1563814855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1563814853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1563814856
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19245,7 +17243,6 @@ GameObject:
   - component: {fileID: 1569348962}
   - component: {fileID: 1569348961}
   - component: {fileID: 1569348960}
-  - component: {fileID: 1569348959}
   m_Layer: 0
   m_Name: Sand_Block (89)
   m_TagString: Block
@@ -19267,18 +17264,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 90
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1569348959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1569348957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1569348960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19507,7 +17492,6 @@ GameObject:
   - component: {fileID: 1600035262}
   - component: {fileID: 1600035261}
   - component: {fileID: 1600035260}
-  - component: {fileID: 1600035259}
   m_Layer: 0
   m_Name: Stone_Block
   m_TagString: Block
@@ -19515,18 +17499,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1600035259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: de39bd9a46afae948912763e6486def0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1600035258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1600035260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19595,7 +17567,6 @@ GameObject:
   - component: {fileID: 1605783998}
   - component: {fileID: 1605783997}
   - component: {fileID: 1605783996}
-  - component: {fileID: 1605783995}
   m_Layer: 0
   m_Name: Sand_Block (108)
   m_TagString: Block
@@ -19617,18 +17588,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1605783995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1605783993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1605783996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19733,7 +17692,6 @@ GameObject:
   - component: {fileID: 1623384386}
   - component: {fileID: 1623384385}
   - component: {fileID: 1623384384}
-  - component: {fileID: 1623384383}
   m_Layer: 0
   m_Name: Sand_Block (88)
   m_TagString: Block
@@ -19755,18 +17713,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 89
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1623384383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1623384381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1623384384
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19835,7 +17781,6 @@ GameObject:
   - component: {fileID: 1641507864}
   - component: {fileID: 1641507863}
   - component: {fileID: 1641507862}
-  - component: {fileID: 1641507861}
   m_Layer: 0
   m_Name: Sand_Block
   m_TagString: Block
@@ -19843,18 +17788,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1641507861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1641507860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1641507862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19979,7 +17912,6 @@ GameObject:
   - component: {fileID: 1682895096}
   - component: {fileID: 1682895095}
   - component: {fileID: 1682895094}
-  - component: {fileID: 1682895093}
   m_Layer: 0
   m_Name: Sand_Block (76)
   m_TagString: Block
@@ -20001,18 +17933,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 77
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1682895093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1682895091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1682895094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20081,7 +18001,6 @@ GameObject:
   - component: {fileID: 1685910358}
   - component: {fileID: 1685910357}
   - component: {fileID: 1685910356}
-  - component: {fileID: 1685910355}
   m_Layer: 0
   m_Name: Tall Block (3)
   m_TagString: Block
@@ -20089,18 +18008,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1685910355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1685910354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1685910356
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20169,7 +18076,6 @@ GameObject:
   - component: {fileID: 1692823473}
   - component: {fileID: 1692823472}
   - component: {fileID: 1692823471}
-  - component: {fileID: 1692823470}
   m_Layer: 0
   m_Name: Sand_Block (121)
   m_TagString: Block
@@ -20191,18 +18097,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1692823470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1692823468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1692823471
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20271,7 +18165,6 @@ GameObject:
   - component: {fileID: 1698970537}
   - component: {fileID: 1698970536}
   - component: {fileID: 1698970535}
-  - component: {fileID: 1698970534}
   m_Layer: 0
   m_Name: Wide_Block_Metal
   m_TagString: Block
@@ -20279,18 +18172,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1698970534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 05edff6368dbbca43a222731f26a1deb,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1698970533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1698970535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20373,7 +18254,6 @@ GameObject:
   - component: {fileID: 1711721990}
   - component: {fileID: 1711721989}
   - component: {fileID: 1711721988}
-  - component: {fileID: 1711721987}
   m_Layer: 0
   m_Name: Tall_Block_Stone (1)
   m_TagString: Block
@@ -20381,18 +18261,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1711721987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: eb9bece0a6bc7c14fa852937519cb1a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1711721986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1711721988
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20461,7 +18329,6 @@ GameObject:
   - component: {fileID: 1712046633}
   - component: {fileID: 1712046632}
   - component: {fileID: 1712046631}
-  - component: {fileID: 1712046630}
   m_Layer: 0
   m_Name: Sand_Block (70)
   m_TagString: Block
@@ -20483,18 +18350,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1712046630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1712046628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1712046631
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20598,7 +18453,6 @@ GameObject:
   - component: {fileID: 1749856355}
   - component: {fileID: 1749856354}
   - component: {fileID: 1749856353}
-  - component: {fileID: 1749856352}
   m_Layer: 0
   m_Name: Sand_Block (69)
   m_TagString: Block
@@ -20620,18 +18474,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1749856352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1749856350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1749856353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20714,7 +18556,6 @@ GameObject:
   - component: {fileID: 1760929459}
   - component: {fileID: 1760929458}
   - component: {fileID: 1760929457}
-  - component: {fileID: 1760929456}
   m_Layer: 0
   m_Name: Wide_Block_Stone (1)
   m_TagString: Block
@@ -20722,18 +18563,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1760929456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: 9c80cc9b85115c04db7570a8223b63e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760929455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1760929457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20816,7 +18645,6 @@ GameObject:
   - component: {fileID: 1771108670}
   - component: {fileID: 1771108669}
   - component: {fileID: 1771108668}
-  - component: {fileID: 1771108667}
   m_Layer: 0
   m_Name: Sand_Block (84)
   m_TagString: Block
@@ -20838,18 +18666,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 85
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1771108667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771108665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1771108668
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20958,7 +18774,6 @@ GameObject:
   - component: {fileID: 1781003191}
   - component: {fileID: 1781003190}
   - component: {fileID: 1781003189}
-  - component: {fileID: 1781003188}
   m_Layer: 0
   m_Name: Block (5)
   m_TagString: Block
@@ -20966,18 +18781,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1781003188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: 68d75a452f6da59478cba27011ee4d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1781003187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1781003189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21046,7 +18849,6 @@ GameObject:
   - component: {fileID: 1786950846}
   - component: {fileID: 1786950845}
   - component: {fileID: 1786950844}
-  - component: {fileID: 1786950843}
   m_Layer: 0
   m_Name: Tall Block (2)
   m_TagString: Block
@@ -21054,18 +18856,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1786950843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1786950842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1786950844
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21134,7 +18924,6 @@ GameObject:
   - component: {fileID: 1792225779}
   - component: {fileID: 1792225778}
   - component: {fileID: 1792225777}
-  - component: {fileID: 1792225776}
   m_Layer: 0
   m_Name: Sand_Block (37)
   m_TagString: Block
@@ -21156,18 +18945,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1792225776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1792225774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1792225777
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21250,7 +19027,6 @@ GameObject:
   - component: {fileID: 1803407597}
   - component: {fileID: 1803407596}
   - component: {fileID: 1803407595}
-  - component: {fileID: 1803407594}
   m_Layer: 0
   m_Name: Tall Block (3)
   m_TagString: Block
@@ -21258,18 +19034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1803407594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1803407593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1803407595
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21338,7 +19102,6 @@ GameObject:
   - component: {fileID: 1805149996}
   - component: {fileID: 1805149995}
   - component: {fileID: 1805149994}
-  - component: {fileID: 1805149993}
   m_Layer: 0
   m_Name: Sand_Block (99)
   m_TagString: Block
@@ -21360,18 +19123,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1805149993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1805149991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1805149994
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21440,7 +19191,6 @@ GameObject:
   - component: {fileID: 1814215878}
   - component: {fileID: 1814215877}
   - component: {fileID: 1814215876}
-  - component: {fileID: 1814215875}
   m_Layer: 0
   m_Name: Wide Block (3)
   m_TagString: Block
@@ -21448,18 +19198,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1814215875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1814215874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1814215876
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21760,7 +19498,6 @@ GameObject:
   - component: {fileID: 1864572628}
   - component: {fileID: 1864572627}
   - component: {fileID: 1864572626}
-  - component: {fileID: 1864572625}
   m_Layer: 0
   m_Name: Sand_Block (96)
   m_TagString: Block
@@ -21782,18 +19519,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1864572625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1864572623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1864572626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21904,7 +19629,6 @@ GameObject:
   - component: {fileID: 1928697909}
   - component: {fileID: 1928697908}
   - component: {fileID: 1928697907}
-  - component: {fileID: 1928697906}
   m_Layer: 0
   m_Name: Sand_Block (64)
   m_TagString: Block
@@ -21926,18 +19650,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 65
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1928697906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1928697904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1928697907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22006,7 +19718,6 @@ GameObject:
   - component: {fileID: 1947604644}
   - component: {fileID: 1947604643}
   - component: {fileID: 1947604642}
-  - component: {fileID: 1947604641}
   m_Layer: 0
   m_Name: Sand_Block (109)
   m_TagString: Block
@@ -22028,18 +19739,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1947604641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1947604639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1947604642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22222,7 +19921,6 @@ GameObject:
   - component: {fileID: 1988288167}
   - component: {fileID: 1988288166}
   - component: {fileID: 1988288165}
-  - component: {fileID: 1988288164}
   m_Layer: 0
   m_Name: Sand_Block (7)
   m_TagString: Block
@@ -22230,18 +19928,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1988288164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988288163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1988288165
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22338,7 +20024,6 @@ GameObject:
   - component: {fileID: 2010915289}
   - component: {fileID: 2010915288}
   - component: {fileID: 2010915287}
-  - component: {fileID: 2010915286}
   m_Layer: 0
   m_Name: Sand_Block (53)
   m_TagString: Block
@@ -22360,18 +20045,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2010915286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2010915284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2010915287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22454,7 +20127,6 @@ GameObject:
   - component: {fileID: 2014668598}
   - component: {fileID: 2014668597}
   - component: {fileID: 2014668596}
-  - component: {fileID: 2014668595}
   m_Layer: 0
   m_Name: Sand_Block (25)
   m_TagString: Block
@@ -22476,18 +20148,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2014668595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2014668593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2014668596
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22556,7 +20216,6 @@ GameObject:
   - component: {fileID: 2016137820}
   - component: {fileID: 2016137819}
   - component: {fileID: 2016137818}
-  - component: {fileID: 2016137817}
   m_Layer: 0
   m_Name: Tall Block
   m_TagString: Block
@@ -22564,18 +20223,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2016137817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114280510307858926, guid: a884776f8030af84aa7e46ae1465a796,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2016137816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2016137818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22718,7 +20365,6 @@ GameObject:
   - component: {fileID: 2040309065}
   - component: {fileID: 2040309064}
   - component: {fileID: 2040309063}
-  - component: {fileID: 2040309062}
   m_Layer: 0
   m_Name: Sand_Block (81)
   m_TagString: Block
@@ -22740,18 +20386,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 82
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2040309062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2040309060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2040309063
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22820,7 +20454,6 @@ GameObject:
   - component: {fileID: 2042873653}
   - component: {fileID: 2042873652}
   - component: {fileID: 2042873651}
-  - component: {fileID: 2042873650}
   m_Layer: 0
   m_Name: Wide Block
   m_TagString: Block
@@ -22828,18 +20461,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2042873650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2042873649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2042873651
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22908,7 +20529,6 @@ GameObject:
   - component: {fileID: 2045682559}
   - component: {fileID: 2045682558}
   - component: {fileID: 2045682557}
-  - component: {fileID: 2045682556}
   m_Layer: 0
   m_Name: Sand_Block (14)
   m_TagString: Block
@@ -22916,18 +20536,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2045682556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2045682555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2045682557
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23101,7 +20709,6 @@ GameObject:
   - component: {fileID: 2053797514}
   - component: {fileID: 2053797513}
   - component: {fileID: 2053797512}
-  - component: {fileID: 2053797511}
   m_Layer: 0
   m_Name: Sand_Block (79)
   m_TagString: Block
@@ -23123,18 +20730,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 80
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2053797511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2053797509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2053797512
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23245,7 +20840,6 @@ GameObject:
   - component: {fileID: 2074456351}
   - component: {fileID: 2074456350}
   - component: {fileID: 2074456349}
-  - component: {fileID: 2074456348}
   m_Layer: 0
   m_Name: Sand_Block (34)
   m_TagString: Block
@@ -23267,18 +20861,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2074456348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2074456346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2074456349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23347,7 +20929,6 @@ GameObject:
   - component: {fileID: 2076971178}
   - component: {fileID: 2076971177}
   - component: {fileID: 2076971176}
-  - component: {fileID: 2076971175}
   m_Layer: 0
   m_Name: Sand_Block (36)
   m_TagString: Block
@@ -23369,18 +20950,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2076971175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2076971173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2076971176
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23449,7 +21018,6 @@ GameObject:
   - component: {fileID: 2082194493}
   - component: {fileID: 2082194492}
   - component: {fileID: 2082194491}
-  - component: {fileID: 2082194490}
   m_Layer: 0
   m_Name: Wide Block (1)
   m_TagString: Block
@@ -23457,18 +21025,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2082194490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2082194489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2082194491
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23537,7 +21093,6 @@ GameObject:
   - component: {fileID: 2096009248}
   - component: {fileID: 2096009247}
   - component: {fileID: 2096009246}
-  - component: {fileID: 2096009245}
   m_Layer: 0
   m_Name: Wide Block
   m_TagString: Block
@@ -23545,18 +21100,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2096009245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114072553477939060, guid: d20dba6687d2e4242ad5b93455c76cda,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2096009244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2096009246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23801,7 +21344,6 @@ GameObject:
   - component: {fileID: 2111989538}
   - component: {fileID: 2111989537}
   - component: {fileID: 2111989536}
-  - component: {fileID: 2111989535}
   m_Layer: 0
   m_Name: Sand_Block (29)
   m_TagString: Block
@@ -23823,18 +21365,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2111989535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2111989533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2111989536
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23931,7 +21461,6 @@ GameObject:
   - component: {fileID: 2142439349}
   - component: {fileID: 2142439348}
   - component: {fileID: 2142439347}
-  - component: {fileID: 2142439346}
   m_Layer: 0
   m_Name: Sand_Block (105)
   m_TagString: Block
@@ -23953,18 +21482,6 @@ Transform:
   m_Father: {fileID: 803564463}
   m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2142439346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114752313049215924, guid: d9555c444f405994889548308ba28ea1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2142439344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a459cab9df7982a429fbd005d5a693ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &2142439347
 MeshRenderer:
   m_ObjectHideFlags: 0
