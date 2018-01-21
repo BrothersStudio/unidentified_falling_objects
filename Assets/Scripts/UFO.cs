@@ -172,7 +172,11 @@ public class UFO : MonoBehaviour
                 up_part = true;
             }
 
-            if (up_part)
+            if (up_part && transform.position.x > 0)
+            {
+                GetComponent<Rigidbody>().AddForce(new Vector3(-5f, 5f, 2f), ForceMode.Acceleration);
+            }
+            else if (up_part && transform.position.x >= 0)
             {
                 GetComponent<Rigidbody>().AddForce(new Vector3(5f, 5f, 2f), ForceMode.Acceleration);
             }
