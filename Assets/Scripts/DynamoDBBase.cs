@@ -40,8 +40,7 @@ public class DynamoDbBase : MonoBehaviour
             {
                 if (_credentials == null)
                 {
-                    TextAsset key = Resources.Load("key") as TextAsset;
-                    string[] split_key = key.text.Split(',');
+                    string[] split_key = Encrypt.DecryptString((Resources.Load("key") as TextAsset).text, "ICARUS").Split(',');
                     _credentials = new BasicAWSCredentials(split_key[0], split_key[1]);
                 }
             }
