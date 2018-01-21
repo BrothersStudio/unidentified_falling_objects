@@ -43,13 +43,6 @@ public class BoxCollision : MonoBehaviour
     {
         if (other.tag == "Ground")
         {
-            if (sounds_i_made < max_sounds)
-            {
-                sounds_i_made++;
-                source.clip = current_ground_sound;
-                source.Play();
-            }
-
             if (!for_show)
             {
                 if (sounds_i_made < max_sounds)

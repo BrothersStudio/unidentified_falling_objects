@@ -13,7 +13,7 @@ public class BlockQueue : MonoBehaviour
     public GameObject block_wide;
     public GameObject sphere;
 
-    private void Start()
+    private void Awake()
     {
         if (GetComponentInParent<UFO>().infinite_mode)
         {
