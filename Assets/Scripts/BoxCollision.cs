@@ -50,8 +50,6 @@ public class BoxCollision : MonoBehaviour
                 source.Play();
             }
 
-            //GetComponentInParent<ParticleSystem>().Play();
-
             if (!for_show)
             {
                 if (sounds_i_made < max_sounds)

@@ -359,6 +359,14 @@ Prefab:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
+      propertyPath: reflectLayers.m_Bits
+      value: 4294967293
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
+      propertyPath: refractLayers.m_Bits
+      value: 4294967293
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 780611a67e8e941a2b3aa96e5915a793, type: 2}
   m_IsPrefabParent: 0
@@ -1609,6 +1617,7 @@ MonoBehaviour:
   score_prefab: {fileID: 1063562126706078, guid: 60e98255999b15d4284791b13deb5457,
     type: 2}
   ground_counter: {fileID: 0}
+  next_block_location: {fileID: 0}
 --- !u!4 &871192835
 Transform:
   m_ObjectHideFlags: 0
