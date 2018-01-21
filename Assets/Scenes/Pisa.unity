@@ -1208,6 +1208,7 @@ MonoBehaviour:
   reset_button: {fileID: 266776050}
   end_game_menu: {fileID: 1719475318}
   leaderboard: {fileID: 1693383067}
+  end_screen: 0
   score_prefab: {fileID: 1063562126706078, guid: 60e98255999b15d4284791b13deb5457,
     type: 2}
   ground_counter: {fileID: 0}
@@ -1334,10 +1335,11 @@ AudioSource:
   m_GameObject: {fileID: 1041358083}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243648428618737008, guid: bd798983745b9d34c825ee056f9f8359,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 1b69d49d383ff4e4187830b1f6295aba, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.519
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
