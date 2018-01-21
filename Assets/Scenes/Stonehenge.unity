@@ -1275,6 +1275,7 @@ GameObject:
   - component: {fileID: 562510102}
   - component: {fileID: 562510101}
   - component: {fileID: 562510100}
+  - component: {fileID: 562510103}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Ground
@@ -1336,6 +1337,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &562510103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 562510099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50b0e98b00743d4e9e4d411b01508d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 1291432032159430, guid: a3ebe63e6301b3d4f89cc88c142ced59,
+    type: 2}
 --- !u!1001 &570855450
 Prefab:
   m_ObjectHideFlags: 0

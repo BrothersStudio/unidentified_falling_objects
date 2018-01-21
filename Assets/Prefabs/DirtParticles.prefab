@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 199559829347695072}
   - component: {fileID: 198440054962449032}
   m_Layer: 1
-  m_Name: ParticleSystem
+  m_Name: DirtParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.384, g: 0.6941243, b: 1, a: 1}
+      maxColor: {r: 0.19117647, g: 0.15580882, b: 0.13916522, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

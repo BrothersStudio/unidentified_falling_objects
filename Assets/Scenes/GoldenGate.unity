@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b50b0e98b00743d4e9e4d411b01508d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlePrefab: {fileID: 1291432032159430, guid: 687c75368fec36b4fbaa9425bb2caf4e,
+  particlePrefab: {fileID: 1291432032159430, guid: e626d1d37fefba84f9143f36ca037c55,
     type: 2}
 --- !u!1 &171697551
 GameObject:
