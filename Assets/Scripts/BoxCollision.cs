@@ -48,7 +48,7 @@ public class BoxCollision : MonoBehaviour
                 source.Play();
             }
 
-            GetComponentInParent<ParticleSystem>().Play();
+            //GetComponentInParent<ParticleSystem>().Play();
 
             checker.BlockHitGround(+1);
 
