@@ -31,10 +31,16 @@ public class SoundManager : MonoBehaviour {
         if (next.name == "MainMenu")
         {
             PlayMusic(menuMusic);
+            Debug.Log("Playing menu");
         }
         else
         {
-            PlayMusic(inLevelMusic);
+            if (musicSource.clip != inLevelMusic)
+            {
+                PlayMusic(inLevelMusic);
+                Debug.Log("In Level Music");
+            }
+            
         }
     }
 
