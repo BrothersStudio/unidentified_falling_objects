@@ -45,6 +45,7 @@ public class PlacementChecker : MonoBehaviour
     public Text ground_counter;
     GameObject visible_next_block;
     public Transform next_block_location;
+    public GameObject infinite_text;
 
     private void Start()
     {
@@ -58,7 +59,15 @@ public class PlacementChecker : MonoBehaviour
         }
 
         score_holder = leaderboard.transform.Find("Score Holder");
-        LeaderboardDriver.FindScoresForLevel(SceneIndices.GetIndex(SceneManager.GetActiveScene().name));
+        int scene_ind = SceneIndices.GetIndex(SceneManager.GetActiveScene().name);
+        LeaderboardDriver.FindScoresForLevel(scene_ind);
+
+        // If never seen level before, display intro text
+        if (!SceneIndices.SeenLevel(scene_ind))
+        {
+            SceneIndices.PlayingLevel(scene_ind);
+            canvas.transform.Find("Intro Text").gameObject.SetActive(true);
+        }
     }
 
     private void Update()

@@ -4,6 +4,30 @@ using UnityEngine;
 
 public static class SceneIndices
 {
+    private static List<bool> levels_played = new List<bool>();
+
+    public static bool SeenLevel(int ind)
+    {
+        if (levels_played.Count == 0)
+        {
+            return false;
+        }
+        else
+        {
+            return levels_played[ind];
+        }
+    }
+
+    public static void PlayingLevel(int ind)
+    {
+        if (levels_played.Count == 0)
+        {
+            levels_played = new List<bool>(new bool[] { false, false, false, false, false, false, false, false, false});
+        }
+
+        levels_played[ind] = true;
+    }
+
     public static int GetIndex(string input)
     {
         // Hacky way of switching between scene names and scene numbers
