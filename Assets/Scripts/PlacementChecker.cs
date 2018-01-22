@@ -120,7 +120,7 @@ public class PlacementChecker : MonoBehaviour
                 }
             }
 
-            if (scores.Count == 0)
+            if (scores.Count == 0 || (!name_on_board && scores.Count < 15))
             {
                 name_on_board = true;
                 GameObject user_score_object = Instantiate(score_prefab, score_holder);
