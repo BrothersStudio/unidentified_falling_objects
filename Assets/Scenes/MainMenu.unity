@@ -19712,7 +19712,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bd39f1b34d1888042978cd9cb0129594, type: 3}
   menuMusic: {fileID: 8300000, guid: f65cd66691e16504faa7b16086066299, type: 3}
   Mute: {fileID: 0}
-  numOfRepeats: 4
+  numOfRepeats: 3
 --- !u!1 &1864572623
 GameObject:
   m_ObjectHideFlags: 0
