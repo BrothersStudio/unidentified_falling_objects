@@ -14,7 +14,7 @@ public class SoundManager : MonoBehaviour {
 
     private int trackNumber = 0;
     private float lengthOfClip;
-    public float numOfRepeats = 3;
+    public float numOfRepeats = 2;
     private float timeOfRepeats;
     private float fadeOutTime = 15;
     private float fadeInTime = 10;
