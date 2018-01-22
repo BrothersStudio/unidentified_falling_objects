@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    private void Update()
+    {
+        if ((Input.GetKey(KeyCode.Return) ||
+            Input.GetKey(KeyCode.Space)))
+        {
+            NextScene();
+        }
+    }
+
     public void NextScene()
     {
         string current_name = SceneManager.GetActiveScene().name;
