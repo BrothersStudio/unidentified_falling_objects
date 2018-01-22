@@ -68,18 +68,28 @@ public class CameraTurnAndFace : MonoBehaviour
 
             List<Dictionary<string, AttributeValue>> scores = LeaderboardDriver.Results;
 
-            foreach (var item in scores)
+            if (scores.Count > 0)
             {
-                GameObject score = Instantiate(score_prefab, score_holder);
-                score.transform.Find("Name").GetComponent<Text>().text = item["Name"].S;
-                score.transform.Find("Score").GetComponent<Text>().text = item["Score"].N;
-
-                // If we see the current user's score, change the color.
-                if (item["Id"].S == LeaderboardDriver.Id)
+                if (int.Parse(scores[0]["Level"].N) == current_level)
                 {
-                    Color current_color = score.GetComponent<Image>().color;
-                    current_color.a = 1;
-                    score.GetComponent<Image>().color = current_color;
+                    foreach (var item in scores)
+                    {
+                        GameObject score = Instantiate(score_prefab, score_holder);
+                        score.transform.Find("Name").GetComponent<Text>().text = item["Name"].S;
+                        score.transform.Find("Score").GetComponent<Text>().text = item["Score"].N;
+
+                        // If we see the current user's score, change the color.
+                        if (item["Id"].S == LeaderboardDriver.Id)
+                        {
+                            Color current_color = score.GetComponent<Image>().color;
+                            current_color.a = 1;
+                            score.GetComponent<Image>().color = current_color;
+                        }
+                    }
+                }
+                else
+                {
+                    loading_text.SetActive(true);
                 }
             }
         }
@@ -130,6 +140,7 @@ public class CameraTurnAndFace : MonoBehaviour
 
     public void ChangeLevels(bool left)
     {
+        ClearLeaderboard();
         if (left)
         {
             if (current_target == level1)

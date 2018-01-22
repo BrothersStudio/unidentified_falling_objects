@@ -55,7 +55,7 @@ public class UFO : MonoBehaviour
             if ((Input.GetKey(KeyCode.DownArrow) ||
                 Input.GetKey(KeyCode.Mouse0) ||
                 Input.GetKey(KeyCode.Space)) &&
-                (Time.timeSinceLevelLoad > 0.5f))
+                (Time.timeSinceLevelLoad > 0.25f))
             {
                 if (GetComponentInChildren<Block>() != null)
                 {

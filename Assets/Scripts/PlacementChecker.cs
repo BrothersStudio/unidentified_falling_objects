@@ -187,7 +187,7 @@ public class PlacementChecker : MonoBehaviour
                         SpawnScoreWord(added_score, blocks[i].transform.position);
 
                         // Check for pity reset text
-                        if (blocks_dropped > 1 && (score / (score_factor * blocks_dropped) < 0.3))
+                        if (blocks_dropped > 1 && (score / (score_factor * blocks_dropped) < 0.5))
                         {
                             reset_text.SetActive(true);
                         }

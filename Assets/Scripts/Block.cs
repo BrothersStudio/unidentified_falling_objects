@@ -30,7 +30,7 @@ public class Block : MonoBehaviour
                 detached = true;
             }
 
-            if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.magnitude <= 0.01)
+            if (detached && !spawned_new_block && GetComponent<Rigidbody>().velocity.magnitude <= 0.1)
             {
                 GameObject.Find("UFO").GetComponent<UFO>().SpawnNewBlock();
             }
