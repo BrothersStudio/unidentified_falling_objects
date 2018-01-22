@@ -25,6 +25,10 @@ public class DestroyTitle : MonoBehaviour
             Color current_color = GetComponent<Text>().color;
             current_color.a -= fade_speed;
             GetComponent<Text>().color = current_color;
+            if (current_color.a <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
