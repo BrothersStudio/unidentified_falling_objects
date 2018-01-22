@@ -8,12 +8,16 @@ public class SoundManager : MonoBehaviour {
 
     public AudioSource musicSource;
     public static SoundManager instance = null;
-    public AudioClip inLevelMusic;
+    public AudioClip[] inLevelMusic;
     public AudioClip menuMusic;
     public AudioMixerSnapshot Mute;
 
-    private int fadeOutTime = 2;
-    private int fadeInTime = 2;
+    private int trackNumber = 0;
+    private float lengthOfClip;
+    public float numOfRepeats = 6;
+    private float timeOfRepeats;
+    private float fadeOutTime = 15;
+    private float fadeInTime = 10;
 
     private void OnEnable()
     {
@@ -33,9 +37,10 @@ public class SoundManager : MonoBehaviour {
         }
         else
         {
-            if (musicSource.clip != inLevelMusic)
+            if (musicSource.clip != inLevelMusic[trackNumber])
             {
-                PlayMusic(inLevelMusic);
+                PlayMusic(inLevelMusic[trackNumber]);
+                StartCoroutine(CountSongLoops());
             }
         }
     }
@@ -53,6 +58,35 @@ public class SoundManager : MonoBehaviour {
 
         DontDestroyOnLoad(gameObject);
 	}
+
+    IEnumerator CountSongLoops()
+    {
+        while (true)
+        {
+            //finds out total length of time music will play before switchinging songs
+            lengthOfClip = inLevelMusic[trackNumber].length;
+            timeOfRepeats = lengthOfClip * numOfRepeats;
+
+            //waits designated amouint of timebefore fading out
+            yield return new WaitForSeconds(timeOfRepeats);
+            StartCoroutine(FadeOutMusic());
+
+            //switches track #
+            if (trackNumber != (inLevelMusic.Length - 1))
+                trackNumber++;
+            else
+                trackNumber = 0;
+
+            //after fade out is done, loads new clip, plays and fades in
+            yield return new WaitForSeconds(fadeOutTime);
+
+            musicSource.Stop();
+            musicSource.clip = inLevelMusic[trackNumber];
+            musicSource.Play();
+
+            StartCoroutine(FadeInMusic());
+        }
+    }
 
     public void PlayMusic(AudioClip clip)
     {
