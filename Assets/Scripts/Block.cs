@@ -35,6 +35,12 @@ public class Block : MonoBehaviour
                 GameObject.Find("UFO").GetComponent<UFO>().SpawnNewBlock();
             }
         }
+
+        if (spawned_new_block && GetComponent<Rigidbody>() != null && 
+            !GetComponent<Renderer>().isVisible && GetComponent<Rigidbody>().velocity.magnitude < 0.1)
+        {
+            Destroy(GetComponent<Rigidbody>());
+        }
     }
 
     public bool IsActiveBlock()
