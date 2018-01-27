@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
@@ -15,22 +16,12 @@ public class GameController : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
         loading = true;
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            QuitGame();
-        }
-
-        if (Input.GetKey(KeyCode.R) && current_scene != "MainMenu")
-        {
-            RestartLevel();
-        }
-
         // Wait while main menu is loading before unloading current scene
         if (loading)
         {
@@ -47,16 +38,20 @@ public class GameController : MonoBehaviour
             }
             SceneManager.UnloadSceneAsync(current_scene);
         }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            RestartLevel();
+        }
+
+        if (Input.GetKey(KeyCode.Escape) && !loading)
+        {
+            GameObject.Find("Canvas/Return").GetComponent<Button>().onClick.Invoke();
+        }
     }
 
     public void RestartLevel()
     {
-        int scene_ind = SceneIndices.GetIndex(SceneManager.GetActiveScene().name);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
     }
 }
