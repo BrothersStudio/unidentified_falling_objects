@@ -14,10 +14,10 @@ public class SoundManager : MonoBehaviour {
 
     private int trackNumber = 0;
     private float lengthOfClip;
-    public float numOfRepeats = 6;
+    private float numOfRepeats = 1;
     private float timeOfRepeats;
-    private float fadeOutTime = 15;
-    private float fadeInTime = 10;
+    private float fadeOutTime = 5;
+    private float fadeInTime = 5;
 
     private void OnEnable()
     {
